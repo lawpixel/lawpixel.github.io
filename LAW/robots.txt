@@ -1,6 +1,0 @@
-User-agent: *
-Disallow: /imagen/
-Disallow: /site.webmanifest
-Allow: /
-
-Sitemap: https://lawpixel.github.io/sitemap.xml
