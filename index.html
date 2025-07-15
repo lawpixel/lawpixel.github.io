@@ -14,7 +14,7 @@
     <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large">
     <link rel="canonical" href="https://lawpixel.github.io/">
 <meta name="google-site-verification" content="XFhQKekxGVM6qDoErVnyQon-pJq4BqCyz_3W16qK90Y" />
-   <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NMEG5HLNM4"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -23,10 +23,10 @@
 
   gtag('config', 'G-NMEG5HLNM4');
 </script>
-    
-    <meta name="trustpilot-one-time-domain-verification-id" content="75b93584-c4eb-406d-90d9-e79987d3a570"/>
-    
-    <!-- Open Graph optimizado -->
+
+
+
+<!-- Open Graph optimizado -->
     <meta property="og:title" content="Law Pixel Studio | Diseño Web Premium para Abogados">
     <meta property="og:description" content="Soluciones digitales especializadas para el sector legal. Diseño web profesional, SEO y marketing para abogados y bufetes.">
     <meta property="og:type" content="website">
@@ -45,13 +45,16 @@
     <meta name="twitter:site" content="@lawpixelstudio">
 
     <!-- Favicon y App Icons mejorados -->
-    <link rel="icon" href="/imagen/law-logo.webp" type="image/webp"> <!-- Nuevo favicon principal -->
+    <link rel="icon" href="/imagen/favicon.webp" type="image/webp"> <!-- Nuevo favicon principal -->
     <link rel="icon" href="/imagen/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/imagen/favicon-32x32.png" type="image/png" sizes="32x32">
     <link rel="icon" href="/imagen/favicon-16x16.png" type="image/png" sizes="16x16">
     <link rel="apple-touch-icon" href="/imagen/apple-touch-icon.png" sizes="180x180">
     <link rel="manifest" href="/site.webmanifest">
 
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
     <!-- Preload y Preconnect para mejor performance -->
     <link rel="preload" href="style.css" as="style">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -248,7 +251,7 @@
             "postalCode": "2001",
             "addressCountry": "VE"
           },
-          "priceRange": "$500 - $3000",
+          "priceRange": "$100 - $2000",
           "openingHoursSpecification": [
             {
               "@type": "OpeningHoursSpecification",
@@ -344,6 +347,29 @@
         }
     </script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Review",
+  "itemReviewed": {
+    "@type": "Organization",
+    "name": "Law Pixel Studio"
+  },
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "5",
+    "bestRating": "5"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Carlos Mendoza"
+  },
+  "reviewBody": "Law Pixel transformó mi práctica familiar. De recibir 3 consultas semanales a 10 en solo dos meses."
+}
+</script>
+
+
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome 6 from CDN -->
@@ -384,12 +410,13 @@
     <nav class="relative z-10 bg-neutral-lightest-gray py-4 shadow" itemscope itemtype="https://schema.org/SiteNavigationElement">
         <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
             <a href="#" class="block" itemprop="url">
-                <img src="imagen/law-lateral.webp" alt="Law Pixel Studio - Diseño Web para Abogados Valencia" class="h-20 w-auto" itemprop="logo"> <!-- Logo agrandado -->
+                <img src="imagen/lawlat_1.webp" id="logo" alt="Law Pixel Studio - Diseño Web para Abogados Valencia" class="h-20 w-auto" itemprop="logo"> <!-- Logo agrandado -->
             </a>
             <div class="space-x-6 hidden md:flex">
-                <a href="#servicios" class="hover:text-primary-dark-blue-light font-semibold transition-colors duration-300" itemprop="name">Servicios</a>
-                <a href="#portafolio" class="hover:text-primary-dark-blue-light font-semibold transition-colors duration-300" itemprop="name">Portafolio</a>
-                <a href="#testimonios" class="hover:text-primary-dark-blue-light font-semibold transition-colors duration-300" itemprop="name">Testimonios</a>
+                <a href="/index.html" class="hover:text-primary-dark-blue-light font-semibold transition-colors duration-300" itemprop="name">Home</a>
+                <a href="/service.html" class="hover:text-primary-dark-blue-light font-semibold transition-colors duration-300" itemprop="name">Servicios</a>
+                <a href="/project.html" class="hover:text-primary-dark-blue-light font-semibold transition-colors duration-300" itemprop="name">Portafolio</a>
+                <a href="/about.html" class="hover:text-primary-dark-blue-light font-semibold transition-colors duration-300" itemprop="name">Nosotros</a>
                 <a href="#blog" class="hover:text-primary-dark-blue-light font-semibold transition-colors duration-300" itemprop="name">Blog</a>
                 <a href="#faq" class="hover:text-primary-dark-blue-light font-semibold transition-colors duration-300" itemprop="name">FAQ</a>
                 <a href="https://wa.me/584124058904" target="_blank" rel="noopener nofollow" class="hover:text-primary-dark-blue-light font-semibold transition-colors duration-300" itemprop="name">Contacto</a>
@@ -399,9 +426,10 @@
             </button>
         </div>
         <div id="mobile-menu" class="hidden md:hidden bg-neutral-lightest-gray py-4 px-6 shadow-lg">
-            <a href="#servicios" class="block py-2 text-neutral-dark-gray hover:text-primary-dark-blue-light font-semibold" itemprop="name">Servicios</a>
-            <a href="#portafolio" class="block py-2 text-neutral-dark-gray hover:text-primary-dark-blue-light font-semibold" itemprop="name">Portafolio</a>
-            <a href="#testimonios" class="block py-2 text-neutral-dark-gray hover:text-primary-dark-blue-light font-semibold" itemprop="name">Testimonios</a>
+            <a href="/index.html" class="block py-2 text-neutral-dark-gray hover:text-primary-dark-blue-light font-semibold" itemprop="name">Home</a>
+            <a href="/service.html" class="hover:text-primary-dark-blue-light font-semibold transition-colors duration-300" itemprop="name">Servicios</a>
+            <a href="/project.html" class="block py-2 text-neutral-dark-gray hover:text-primary-dark-blue-light font-semibold" itemprop="name">Portafolio</a>
+            <a href="/about.html" class="block py-2 text-neutral-dark-gray hover:text-primary-dark-blue-light font-semibold" itemprop="name">Nosotros</a>
             <a href="#blog" class="block py-2 text-neutral-dark-gray hover:text-primary-dark-blue-light font-semibold" itemprop="name">Blog</a>
             <a href="#faq" class="block py-2 text-neutral-dark-gray hover:text-primary-dark-blue-light font-semibold" itemprop="name">FAQ</a>
             <a href="https://wa.me/584124058904" target="_blank" rel="noopener nofollow" class="block py-2 text-neutral-dark-gray hover:text-primary-dark-blue-light font-semibold" itemprop="name">Contacto</a>
@@ -418,7 +446,7 @@
                 <h1 class="text-4xl md:text-5xl font-bold text-primary-dark-blue mb-4" itemprop="headline">
                     Diseño Web Especializado para <span itemprop="legalName">Abogados y Bufetes en Valencia</span>
                 </h1>
-                <h2 class="text-3xl md:text-4xl font-bold text-primary-dark-blue mb-4" itemprop="alternativeHeadline">
+                <h2 class="text-2xl md:text-3xl font-bold text-primary-dark-blue mb-4" itemprop="alternativeHeadline">
                     ¿Cómo <span class="typed-keyword" data-keywords="posicionar|rankear|destacar" itemprop="keywords">posicionar</span> tu bufete en la primera página de Google en 2025?
                 </h2>
                 <p class="text-lg text-neutral-dark-gray mb-6 hero-text-container" itemprop="description">
@@ -714,9 +742,9 @@
                         <img src="imagen/p1.webp" alt="Sitio web de un bufete de abogados penalistas en Valencia" loading="lazy"
                             class="w-full h-48 object-cover" />
                         <div class="p-4 bg-white">
-                            <h3 class="font-semibold mb-2">Sitio para Bufete Penal</h3>
-                            <p class="text-neutral-dark-gray text-sm mb-4">Diseño sobrio y funcional para despacho de abogados penalistas en Valencia, con resultados comprobados en visibilidad y posicionamiento.</p>
-                            <a href="https://example.com/proyecto-penal" target="_blank" rel="noopener noreferrer" class="text-accent-orange font-semibold hover:underline flex items-center">
+                            <h3 class="font-semibold mb-2">Sitio para Bufete Vega & Asociados</h3>
+                            <p class="text-neutral-dark-gray text-sm mb-4">Diseño sobrio y funcional para despacho de abogados penalistas , con resultados comprobados en visibilidad y posicionamiento.</p>
+                            <a href="https://lawpixel.github.io/vega/" target="_blank" rel="noopener noreferrer" class="text-accent-orange font-semibold hover:underline flex items-center">
                                 Ver Proyecto <i class="fas fa-external-link-alt ml-2 text-sm"></i>
                             </a>
                         </div>
@@ -728,19 +756,19 @@
                         <div class="p-4 bg-white">
                             <h3 class="font-semibold mb-2">Branding para Firma Civil</h3>
                             <p class="text-neutral-dark-gray text-sm mb-4">Identidad visual y diseño web para firma especializada en derecho civil, logrando un reconocimiento de marca superior y atrayendo clientes legales.</p>
-                            <a href="https://example.com/proyecto-civil" target="_blank" rel="noopener noreferrer" class="text-accent-orange font-semibold hover:underline flex items-center">
+                            <a href="https://www.behance.net/gallery/228623457/Branding-y-Web-Profesional-para-Abogados-%28Law-Pixel%29" target="_blank" rel="noopener noreferrer" class="text-accent-orange font-semibold hover:underline flex items-center">
                                 Ver Proyecto <i class="fas fa-external-link-alt ml-2 text-sm"></i>
                             </a>
                         </div>
                     </div>
                     <!-- Portfolio Item 3 -->
                     <div class="rounded overflow-hidden shadow hover:shadow-lg transition cursor-pointer" data-aos="fade-up" data-aos-delay="300">
-                        <img src="imagen/p3.webp" alt="Plataforma web corporativa para empresa LegalTech" loading="lazy"
+                        <img src="imagen/p2.webp" alt="Plataforma web corporativa para empresa LegalTech" loading="lazy"
                             class="w-full h-48 object-cover" />
                         <div class="p-4 bg-white">
-                            <h3 class="font-semibold mb-2">Web Corporativa para LegalTech</h3>
-                            <p class="text-neutral-dark-gray text-sm mb-4">Plataforma digital para empresa LegalTech con enfoque moderno y accesible, incrementando la captación de usuarios en un 30% y mejorando su autoridad online.</p>
-                            <a href="https://example.com/proyecto-legaltech" target="_blank" rel="noopener noreferrer" class="text-accent-orange font-semibold hover:underline flex items-center">
+                            <h3 class="font-semibold mb-2">Diseño web Derecho penal</h3>
+                            <p class="text-neutral-dark-gray text-sm mb-4">Diseño web de una sola pagina ,mejorando su presencia y autoridad online.</p>
+                            <a href="https://www.behance.net/gallery/229071121/Diseno-web-Legal-Penalista?tracking_source=project_owner_other_projects" target="_blank" rel="noopener noreferrer" class="text-accent-orange font-semibold hover:underline flex items-center">
                                 Ver Proyecto <i class="fas fa-external-link-alt ml-2 text-sm"></i>
                             </a>
                         </div>
@@ -764,29 +792,29 @@
                 <div class="swiper-wrapper">
                     <!-- Blog Article 1 -->
                     <article class="swiper-slide bg-neutral-lightest-gray rounded-lg shadow cursor-pointer hover:shadow-lg transition overflow-hidden">
-                        <img src="https://placehold.co/400x200/003366/FFFFFF?text=Marketing+Legal" alt="Tendencias en Marketing Legal para Abogados" loading="lazy" class="w-full h-40 object-cover rounded-t-lg">
+                        <img src="imagen/marketing.webp" alt="Tendencias en Marketing Legal para Abogados" loading="lazy" class="w-full h-40 object-cover rounded-t-lg">
                         <div class="p-6">
                             <h3 class="font-semibold mb-2 text-primary-dark-blue">Tendencias en Marketing Legal 2025</h3>
                             <p class="text-neutral-dark-gray text-sm mb-4">Descubre cómo atraer clientes usando SEO y herramientas IA en el sector jurídico.</p>
-                            <a href="#" class="text-accent-orange font-semibold hover:underline">Leer más &rarr;</a>
+                            <a href="/blog/tendencias-diseño-2025.html" class="text-accent-orange font-semibold hover:underline">Leer más &rarr;</a>
                         </div>
                     </article>
                     <!-- Blog Article 2 -->
                     <article class="swiper-slide bg-neutral-lightest-gray rounded-lg shadow cursor-pointer hover:shadow-lg transition overflow-hidden">
-                        <img src="https://placehold.co/400x200/00AEEF/FFFFFF?text=Identidad+Visual" alt="Importancia de la Identidad Visual para Bufetes" loading="lazy" class="w-full h-40 object-cover rounded-t-lg">
+                        <img src="imagen/idenntidadvisual.webp" alt="Importancia de la Identidad Visual para Bufetes" loading="lazy" class="w-full h-40 object-cover rounded-t-lg">
                         <div class="p-6">
                             <h3 class="font-semibold mb-2 text-primary-dark-blue">Importancia de la Identidad Visual</h3>
                             <p class="text-neutral-dark-gray text-sm mb-4">Cómo una marca fuerte puede hacer crecer tu bufete y ganar confianza.</p>
-                            <a href="#" class="text-accent-orange font-semibold hover:underline">Leer más &rarr;</a>
+                            <a href="/blog/identidad-visual-legal.html" class="text-accent-orange font-semibold hover:underline">Leer más &rarr;</a>
                         </div>
                     </article>
                     <!-- Blog Article 3 -->
                     <article class="swiper-slide bg-neutral-lightest-gray rounded-lg shadow cursor-pointer hover:shadow-lg transition overflow-hidden">
-                        <img src="https://placehold.co/400x200/F76B1C/FFFFFF?text=SEO+Voz" alt="SEO para Asistentes de Voz y Abogados" loading="lazy" class="w-full h-40 object-cover rounded-t-lg">
+                        <img src="imagen/vos.webp" alt="SEO para Asistentes de Voz y Abogados" loading="lazy" class="w-full h-40 object-cover rounded-t-lg">
                         <div class="p-6">
                             <h3 class="font-semibold mb-2 text-primary-dark-blue">SEO para Asistentes de Voz</h3>
                             <p class="text-neutral-dark-gray text-sm mb-4">Optimiza tu sitio web para búsquedas por voz con ChatGPT, Gemini y Alexa.</p>
-                            <a href="#" class="text-accent-orange font-semibold hover:underline">Leer más &rarr;</a>
+                            <a href="/blog/seo-vos.html" class="text-accent-orange font-semibold hover:underline">Leer más &rarr;</a>
                         </div>
                     </article>
                     <!-- Blog Article 4 -->
@@ -795,7 +823,7 @@
                         <div class="p-6">
                             <h3 class="font-semibold mb-2 text-primary-dark-blue">5 Claves para un SEO Legal Exitoso</h3>
                             <p class="text-neutral-dark-gray text-sm mb-4">Descubre cómo optimizar tu sitio web para aparecer en los primeros resultados de búsqueda y atraer más clientes potenciales.</p>
-                            <a href="#" class="text-accent-orange font-semibold hover:underline">Leer más &rarr;</a>
+                            <a href="/blog/clave-seo-exitoso.html" class="text-accent-orange font-semibold hover:underline">Leer más &rarr;</a>
                         </div>
                     </article>
                     <!-- Blog Article 5 -->
@@ -804,7 +832,7 @@
                         <div class="p-6">
                             <h3 class="font-semibold mb-2 text-primary-dark-blue">Errores Comunes en el Diseño Web Legal</h3>
                             <p class="text-neutral-dark-gray text-sm mb-4">Evita estos errores que pueden perjudicar la imagen y funcionalidad de tu sitio web legal, afectando tu credibilidad.</p>
-                            <a href="#" class="text-accent-orange font-semibold hover:underline">Leer más &rarr;</a>
+                            <a href="/blog/errores-diseño-web-legal.html" class="text-accent-orange font-semibold hover:underline">Leer más &rarr;</a>
                         </div>
                     </article>
                     <!-- Blog Article 6 -->
@@ -813,7 +841,7 @@
                         <div class="p-6">
                             <h3 class="font-semibold mb-2 text-primary-dark-blue">Cómo un Buen Branding Atrae Clientes</h3>
                             <p class="text-neutral-dark-gray text-sm mb-4">Descubre la importancia de un branding sólido para generar confianza y atraer a tu público objetivo de manera efectiva.</p>
-                            <a href="#" class="text-accent-orange font-semibold hover:underline">Leer más &rarr;</a>
+                            <a href="/blog/atrae-clientes-a-tu-firma.html" class="text-accent-orange font-semibold hover:underline">Leer más &rarr;</a>
                         </div>
                     </article>
                 </div>
@@ -970,10 +998,10 @@
             <div>
                 <h4 class="font-bold text-lg mb-4">Servicios</h4>
                 <ul>
-                    <li><a href="#servicios" class="hover:underline text-neutral-light-gray">Diseño Web para Abogados</a></li>
-                    <li><a href="#servicios" class="hover:underline text-neutral-light-gray">Identidad Visual Jurídica</a></li>
-                    <li><a href="#servicios" class="hover:underline text-neutral-light-gray">SEO para Motores Tradicionales e IA</a></li>
-                    <li><a href="#servicios" class="hover:underline text-neutral-light-gray">Marketing Digital Legal</a></li>
+                    <li><a href="/blog/atrae-clientes-a-tu-firma.html" class="hover:underline text-neutral-light-gray">Diseño Web para Abogados</a></li>
+                    <li><a href="/blog/identidad-visual-legal.html" class="hover:underline text-neutral-light-gray">Identidad Visual Jurídica</a></li>
+                    <li><a href="/blog/clave-seo-exitoso.html" class="hover:underline text-neutral-light-gray">SEO para Motores Tradicionales e IA</a></li>
+                    <li><a href="/blog/tendencias-diseño-2025.html" class="hover:underline text-neutral-light-gray">Marketing Digital Legal</a></li>
                 </ul>
             </div>
             <div>
