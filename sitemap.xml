@@ -47,7 +47,7 @@
 
     <!-- Artículos del blog - URLs con los nombres de archivo exactos proporcionados -->
     <url>
-        <loc>https://lawpixel.github.io/blog/tendencias-dise%C3%B1o-2025.html</loc>
+        <loc>https://lawpixel.github.io/blog/tendencias-diseno-2025.html</loc>
         <lastmod>2025-07-10T10:00:00+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
@@ -71,7 +71,7 @@
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://lawpixel.github.io/blog/errores-dise%C3%B1o-web-legal.html</loc>
+        <loc>https://lawpixel.github.io/blog/errores-diseno-web-legal.html</loc>
         <lastmod>2025-07-18T10:00:00+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
