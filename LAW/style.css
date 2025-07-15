@@ -1,0 +1,371 @@
+/* Custom Tailwind Configuration for specific colors based on provided palette */
+:root {
+    --color-primary-dark-blue: #003366; /* Dark Blue from palette */
+    --color-primary-dark-blue-light: #004488; /* Slightly lighter for hover */
+    --color-secondary-light-blue: #00AEEF; /* Light Blue/Cyan from palette */
+    --color-accent-orange: #F76B1C; /* Orange from palette */
+    --color-accent-orange-dark: #D75B0C; /* Slightly darker for hover */
+    --color-accent-green: #00A88F; /* Green/Teal from palette */
+    --color-accent-green-dark: #008C75; /* Slightly darker for hover */
+    --color-white: #FFFFFF; /* White from palette */
+    --color-black: #000000; /* Black from palette */
+    --color-neutral-lightest-gray: #F9FAFB; /* Existing very light gray */
+    --color-neutral-light-gray: #E0E0E0; /* Light Grey from palette */
+    --color-neutral-medium-gray: #C0C0C0; /* Custom medium gray */
+    --color-neutral-dark-gray: #36454F; /* Dark Grey from palette */
+    --color-yellow-400: #facc15; /* Kept existing yellow for stars */
+}
+
+/* Mapping new colors to existing Tailwind-like variables */
+/* Primary Blue */
+.bg-primary-dark-blue { background-color: var(--color-primary-dark-blue); }
+.hover\:bg-primary-dark-blue-light:hover { background-color: var(--color-primary-dark-blue-light); }
+.text-primary-dark-blue { color: var(--color-primary-dark-blue); }
+.focus\:ring-primary-dark-blue:focus { box-shadow: 0 0 0 3px rgba(0, 51, 102, 0.3); } /* Manual rgba for focus ring */
+.border-primary-dark-blue { border-color: var(--color-primary-dark-blue); }
+
+/* Accent Orange */
+.bg-accent-orange { background-color: var(--color-accent-orange); }
+.hover\:bg-accent-orange-dark:hover { background-color: var(--color-accent-orange-dark); }
+.text-accent-orange { color: var(--color-accent-orange); }
+.text-accent-orange-dark { color: var(--color-accent-orange-dark); }
+
+/* Accent Green */
+.text-accent-green { color: var(--color-accent-green); }
+.text-accent-green-dark { color: var(--color-accent-green-dark); }
+
+/* Neutral Grays */
+.bg-neutral-lightest-gray { background-color: var(--color-neutral-lightest-gray); }
+.text-neutral-dark-gray { color: var(--color-neutral-dark-gray); }
+.border-neutral-light-gray { border-color: var(--color-neutral-light-gray); }
+.text-neutral-light-gray { color: var(--color-neutral-light-gray); }
+.text-neutral-medium-gray { color: var(--color-neutral-medium-gray); }
+
+/* General styles */
+html {
+    height: 100%; /* HTML takes full viewport height */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Changed to Roboto */
+    background-color: var(--color-neutral-lightest-gray);
+    color: var(--color-neutral-dark-gray);
+    line-height: 1.6;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    display: flex; /* Enable Flexbox */
+    flex-direction: column; /* Arrange items vertically */
+    min-height: 100vh; /* Body takes at least full viewport height */
+    margin: 0;
+    padding: 0;
+    position: relative; /* Needed for z-index on children if any */
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif; /* Changed to Lato */
+    color: var(--color-primary-dark-blue); /* Default heading color */
+}
+
+/* Main content grows to push footer down */
+main {
+    flex: 1; /* This will make the main content grow and push the footer to the bottom */
+    box-sizing: border-box;
+}
+
+/* Enlaces */
+a {
+    color: var(--color-accent-orange);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Botones */
+button {
+    background-color: var(--color-primary-dark-blue);
+    color: var(--color-white);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--color-primary-dark-blue-light);
+}
+
+/* Formularios */
+input,
+textarea {
+    border: 1px solid var(--color-neutral-light-gray);
+    border-radius: 0.375rem;
+    padding: 0.5rem 0.75rem;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--color-primary-dark-blue);
+    box-shadow: 0 0 0 3px rgba(0, 51, 102, 0.3);
+}
+
+/* Contenedores de tarjetas */
+.card {
+    background: var(--color-white);
+    border-radius: 1rem;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* Particles.js styling */
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background-color: var(--color-white); /* Ensure particles background matches body or hero */
+}
+
+
+
+/* Hero section specific styles for background and overlay */
+.hero-section {
+    position: relative;
+    z-index: 1; /* Ensure hero content is above particles */
+    background-color: transparent; /* Allow particles to show through */
+}
+
+/* Swiper custom styles for navigation and pagination (only for mySwiper as hero-swiper arrows are removed) */
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--color-primary-dark-blue) !important; /* Adjust color for visibility */
+    position: absolute; /* Ensure absolute positioning */
+    top: 50%; /* Vertically center */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+    z-index: 10; /* Ensure they are above the image */
+    width: 40px; /* Standard Swiper button size */
+    height: 40px; /* Standard Swiper button size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.swiper-button-prev {
+    left: 10px; /* Adjust as needed for padding */
+}
+
+.swiper-button-next {
+    right: 10px; /* Adjust as needed for padding */
+}
+
+/* Hide default Swiper outlines on focus */
+.swiper-button-next:focus,
+.swiper-button-prev:focus {
+    outline: none;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--color-accent-orange) !important; /* Active dot color */
+}
+
+/* Animation for numbers section icons */
+.animate-bounce {
+    animation: bounce 1s infinite;
+}
+
+.animate-pulse {
+    animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite; /* Adjusted for subtle pulse */
+}
+
+.animate-spin-slow {
+    animation: spin 3s linear infinite;
+}
+
+.animate-ping {
+    animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(-25%);
+        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+        transform: translateY(0);
+        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: .5;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes ping {
+    75%, 100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+/* Custom Slider Styles - Simplified for new implementation */
+.hero-slider-image {
+    transition: opacity 1s ease-in-out; /* Fade transition for images */
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--color-primary-dark-blue); /* Original dark indigo */
+    color: var(--color-neutral-light-gray); /* Original light gray text */
+    padding: 3rem 1.5rem;
+    box-sizing: border-box;
+    position: relative; /* Ensure z-index works */
+    z-index: 1; /* Standard z-index */
+}
+
+footer a {
+    color: var(--color-accent-orange); /* Original link color */
+}
+
+footer a:hover {
+    color: var(--color-accent-orange-dark); /* Original link hover color */
+}
+
+/* CTA Pulse effect for buttons */
+.cta-pulse {
+    animation: cta-pulse 2s infinite;
+}
+
+@keyframes cta-pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(247, 107, 28, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 20px rgba(247, 107, 28, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(247, 107, 28, 0);
+    }
+}
+
+/* Responsive adjustments for the floating WhatsApp button */
+.whatsapp-float-container {
+    position: fixed !important;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between text and button */
+    z-index: 10000 !important;
+    -webkit-transform: translateZ(0); /* Forcing hardware acceleration */
+    transform: translateZ(0); /* Forcing hardware acceleration */
+}
+
+.whatsapp-float-text {
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background for text */
+    color: white;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    white-space: nowrap; /* Prevent text wrapping */
+    opacity: 1; /* Always visible */
+    transition: opacity 0.3s ease;
+}
+
+.whatsapp-float-button {
+    background-color: #25D366; /* WhatsApp green */
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+}
+
+.whatsapp-float-button:hover {
+    transform: scale(1.1);
+    background-color: #1DA851; /* Slightly darker green on hover */
+}
+
+.whatsapp-float-button i {
+    font-size: 32px;
+}
+
+@media (max-width: 768px) {
+    .whatsapp-float-container {
+        bottom: 15px;
+        right: 15px;
+        gap: 0; /* Remove gap on mobile */
+    }
+    .whatsapp-float-text {
+        display: none; /* Hide text on mobile */
+    }
+    .whatsapp-float-button {
+        width: 50px;
+        height: 50px;
+    }
+    .whatsapp-float-button i {
+        font-size: 24px;
+    }
+    /* Adjust H1 and H2 font sizes for mobile */
+    h1 {
+        font-size: 2.5rem; /* Reduced from 4xl/5xl */
+    }
+    h2 {
+        font-size: 2rem; /* Reduced from 3xl/4xl */
+    }
+}
+
+/* Ensure hero text doesn't jump */
+.hero-text-container {
+    min-height: 150px; /* Adjust based on the longest keyword phrase to prevent jumps */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.typed-keyword-wrapper {
+    display: inline-block; /* Ensure it takes only necessary width */
+    min-width: 300px; /* Adjust this value based on your longest keyword to prevent layout shifts */
+    vertical-align: top; /* Align with the text */
+}

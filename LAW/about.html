@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Sobre Nosotros - Law Pixel Studio | Diseño Web y Marketing Digital Estratégico</title>
+    <meta name="description" content="Conoce a Law Pixel Studio, tu agencia especializada en diseño web y marketing digital para abogados, médicos, corporativos y e-commerce. Potenciamos tu marca para atraer clientes y aumentar tu valor profesional, trabajando en remoto para todo el mundo.">
+
+    <!-- SEO Meta Tags mejorados para la página "Sobre Nosotros" -->
+    <meta name="keywords" content="sobre nosotros Law Pixel Studio, agencia diseño web, marketing digital, branding, diseño web abogados, diseño web médicos, e-commerce, páginas corporativas, atraer clientes, aumentar ingresos abogados, valor profesional, trabajo remoto, diseño web global">
+    <meta name="author" content="Law Pixel Studio">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <link rel="canonical" href="https://lawpixel.github.io/about.html">
+
+    <!-- Open Graph optimizado para la página "Sobre Nosotros" -->
+    <meta property="og:title" content="Sobre Nosotros - Law Pixel Studio | Expertos en Estrategia Digital para tu Éxito">
+    <meta property="og:description" content="Descubre nuestra pasión por el diseño web y el marketing digital. Especialistas en el sector legal, ofrecemos soluciones innovadoras para diversas industrias que atraen clientes y aumentan tu valor, trabajando para todo el mundo.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lawpixel.github.io/about.html">
+    <meta property="og:image" content="https://lawpixel.github.io/imagen/about-hero.webp"> <!-- Usar una imagen específica para "Sobre Nosotros" -->
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Law Pixel Studio">
+    <meta property="og:locale" content="es_VE">
+
+    <!-- Twitter Card optimizado para la página "Sobre Nosotros" -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sobre Nosotros - Law Pixel Studio | Tu Agencia Digital para el Crecimiento">
+    <meta name="twitter:description" content="Conoce al equipo detrás de las estrategias digitales que impulsan tu negocio, te ayudan a conseguir más clientes y aumentar tu valor. Trabajamos en remoto para todo el mundo.">
+    <meta name="twitter:image" content="https://lawpixel.github.io/imagen/about-hero.webp">
+    <meta name="twitter:site" content="@lawpixelstudio">
+
+    <!-- Favicon y App Icons mejorados -->
+    <link rel="icon" href="/imagen/favicon.webp" type="image/webp">
+    <link rel="icon" href="/imagen/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/imagen/favicon-32x32.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="/imagen/favicon-16x16.png" type="image/png" sizes="16x16">
+    <link rel="apple-touch-icon" href="/imagen/apple-touch-icon.png" sizes="180x180">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Preload y Preconnect para mejor performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preload" as="image" href="/imagen/about-hero.webp">
+    <link rel="preload" href="https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://fonts.gstatic.com/s/lato/v24/S6u8qpgUfCq9gEvx_LM.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome 6 from CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
+    <!-- AOS (Animate On Scroll) CSS CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Swiper CSS CDN (Aunque no se use directamente en esta página, se mantiene por si hay componentes compartidos) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS incrustado -->
+    <style>
+        /* Custom Tailwind Configuration for specific colors based on provided palette */
+        :root {
+            --color-primary-dark-blue: #003366; /* Dark Blue from palette */
+            --color-primary-dark-blue-light: #004488; /* Slightly lighter for hover */
+            --color-secondary-light-blue: #00AEEF; /* Light Blue/Cyan from palette */
+            --color-accent-orange: #F76B1C; /* Orange from palette */
+            --color-accent-orange-dark: #D75B0C; /* Slightly darker for hover */
+            --color-accent-green: #00A88F; /* Green/Teal from palette */
+            --color-accent-green-dark: #008C75; /* Slightly darker for hover */
+            --color-white: #FFFFFF; /* White from palette */
+            --color-black: #000000; /* Black from palette */
+            --color-neutral-lightest-gray: #F9FAFB; /* Existing very light gray */
+            --color-neutral-light-gray: #E0E0E0; /* Light Grey from palette */
+            --color-neutral-medium-gray: #C0C0C0; /* Custom medium gray */
+            --color-neutral-dark-gray: #36454F; /* Dark Grey from palette */
+            --color-yellow-400: #facc15; /* Kept existing yellow for stars */
+        }
+
+        /* Mapping new colors to existing Tailwind-like variables */
+        /* Primary Blue */
+        .bg-primary-dark-blue { background-color: var(--color-primary-dark-blue); }
+        .hover\:bg-primary-dark-blue-light:hover { background-color: var(--color-primary-dark-blue-light); }
+        .text-primary-dark-blue { color: var(--color-primary-dark-blue); }
+        .focus\:ring-primary-dark-blue:focus { box-shadow: 0 0 0 3px rgba(0, 51, 102, 0.3); } /* Manual rgba for focus ring */
+        .border-primary-dark-blue { border-color: var(--color-primary-dark-blue); }
+
+        /* Accent Orange */
+        .bg-accent-orange { background-color: var(--color-accent-orange); }
+        .hover\:bg-accent-orange-dark:hover { background-color: var(--color-accent-orange-dark); }
+        .text-accent-orange { color: var(--color-accent-orange); }
+        .text-accent-orange-dark { color: var(--color-accent-orange-dark); }
+
+        /* Accent Green */
+        .text-accent-green { color: var(--color-accent-green); }
+        .text-accent-green-dark { color: var(--color-accent-green-dark); }
+
+        /* Neutral Grays */
+        .bg-neutral-lightest-gray { background-color: var(--color-neutral-lightest-gray); }
+        .text-neutral-dark-gray { color: var(--color-neutral-dark-gray); }
+        .border-neutral-light-gray { border-color: var(--color-neutral-light-gray); }
+        .text-neutral-light-gray { color: var(--color-neutral-light-gray); }
+        .text-neutral-medium-gray { color: var(--color-neutral-medium-gray); }
+
+        /* General styles */
+        html {
+            height: 100%; /* HTML takes full viewport height */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif; /* Changed to Roboto */
+            background-color: var(--color-neutral-lightest-gray);
+            color: var(--color-neutral-dark-gray);
+            line-height: 1.6;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+            display: flex; /* Enable Flexbox */
+            flex-direction: column; /* Arrange items vertically */
+            min-height: 100vh; /* Body takes at least full viewport height */
+            margin: 0;
+            padding: 0;
+            position: relative; /* Needed for z-index on children if any */
+            box-sizing: border-box;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Lato', sans-serif; /* Changed to Lato */
+            color: var(--color-primary-dark-blue); /* Default heading color */
+        }
+
+        /* Main content grows to push footer down */
+        main {
+            flex: 1; /* This will make the main content grow and push the footer to the bottom */
+            box-sizing: border-box;
+        }
+
+        /* Enlaces */
+        a {
+            color: var(--color-accent-orange);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Botones */
+        button {
+            background-color: var(--color-primary-dark-blue);
+            color: var(--color-white);
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.375rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: var(--color-primary-dark-blue-light);
+        }
+
+        /* Formularios */
+        input,
+        textarea {
+            border: 1px solid var(--color-neutral-light-gray);
+            border-radius: 0.375rem;
+            padding: 0.5rem 0.75rem;
+            width: 100%;
+            box-sizing: border-box;
+            font-size: 1rem;
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: none;
+            border-color: var(--color-primary-dark-blue);
+            box-shadow: 0 0 0 3px rgba(0, 51, 102, 0.3);
+        }
+
+        /* Contenedores de tarjetas */
+        .card {
+            background: var(--color-white);
+            border-radius: 1rem;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Responsive tweaks */
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr !important;
+            }
+        }
+
+        /* Particles.js styling */
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            background-color: var(--color-white); /* Ensure particles background matches body or hero */
+        }
+
+        /* Hero section specific styles for background and overlay */
+        .hero-section {
+            position: relative;
+            z-index: 1; /* Ensure hero content is above particles */
+            background-color: transparent; /* Allow particles to show through */
+        }
+
+        /* Swiper custom styles for navigation and pagination (only for mySwiper as hero-swiper arrows are removed) */
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: var(--color-primary-dark-blue) !important; /* Adjust color for visibility */
+            position: absolute; /* Ensure absolute positioning */
+            top: 50%; /* Vertically center */
+            transform: translateY(-50%); /* Adjust for vertical centering */
+            z-index: 10; /* Ensure they are above the image */
+            width: 40px; /* Standard Swiper button size */
+            height: 40px; /* Standard Swiper button size */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .swiper-button-prev {
+            left: 10px; /* Adjust as needed for padding */
+        }
+
+        .swiper-button-next {
+            right: 10px; /* Adjust as needed for padding */
+        }
+
+        /* Hide default Swiper outlines on focus */
+        .swiper-button-next:focus,
+        .swiper-button-prev:focus {
+            outline: none;
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: var(--color-accent-orange) !important; /* Active dot color */
+        }
+
+        /* Animation for numbers section icons */
+        .animate-bounce {
+            animation: bounce 1s infinite;
+        }
+
+        .animate-pulse {
+            animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite; /* Adjusted for subtle pulse */
+        }
+
+        .animate-spin-slow {
+            animation: spin 3s linear infinite;
+        }
+
+        .animate-ping {
+            animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(-25%);
+                animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+            }
+            50% {
+                transform: translateY(0);
+                animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: .5;
+            }
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes ping {
+            75%, 100% {
+                transform: scale(2);
+                opacity: 0;
+            }
+        }
+
+        /* Custom Slider Styles - Simplified for new implementation */
+        .hero-slider-image {
+            transition: opacity 1s ease-in-out; /* Fade transition for images */
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: var(--color-primary-dark-blue); /* Original dark indigo */
+            color: var(--color-neutral-light-gray); /* Original light gray text */
+            padding: 3rem 1.5rem;
+            box-sizing: border-box;
+            position: relative; /* Ensure z-index works */
+            z-index: 1; /* Standard z-index */
+        }
+
+        footer a {
+            color: var(--color-accent-orange); /* Original link color */
+        }
+
+        footer a:hover {
+            color: var(--color-accent-orange-dark); /* Original link hover color */
+        }
+
+        /* CTA Pulse effect for buttons */
+        .cta-pulse {
+            animation: cta-pulse 2s infinite;
+        }
+
+        @keyframes cta-pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(247, 107, 28, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 20px rgba(247, 107, 28, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(247, 107, 28, 0);
+            }
+        }
+
+        /* Responsive adjustments for the floating WhatsApp button */
+        .whatsapp-float-container {
+            position: fixed !important;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px; /* Space between text and button */
+            z-index: 10000 !important;
+            -webkit-transform: translateZ(0); /* Forcing hardware acceleration */
+            transform: translateZ(0); /* Forcing hardware acceleration */
+        }
+
+        .whatsapp-float-text {
+            background-color: rgba(0, 0, 0, 0.7); /* Dark background for text */
+            color: white;
+            padding: 8px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            white-space: nowrap; /* Prevent text wrapping */
+            opacity: 1; /* Always visible */
+            transition: opacity 0.3s ease;
+        }
+
+        .whatsapp-float-button {
+            background-color: #25D366; /* WhatsApp green */
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+        }
+
+        .whatsapp-float-button:hover {
+            transform: scale(1.1);
+            background-color: #1DA851; /* Slightly darker green on hover */
+        }
+
+        .whatsapp-float-button i {
+            font-size: 32px;
+        }
+
+        @media (max-width: 768px) {
+            .whatsapp-float-container {
+                bottom: 15px;
+                right: 15px;
+                gap: 0; /* Remove gap on mobile */
+            }
+            .whatsapp-float-text {
+                display: none; /* Hide text on mobile */
+            }
+            .whatsapp-float-button {
+                width: 50px;
+                height: 50px;
+            }
+            .whatsapp-float-button i {
+                font-size: 24px;
+            }
+            /* Adjust H1 and H2 font sizes for mobile */
+            h1 {
+                font-size: 2.5rem; /* Reduced from 4xl/5xl */
+            }
+            h2 {
+                font-size: 2rem; /* Reduced from 3xl/4xl */
+            }
+        }
+
+        /* Ensure hero text doesn't jump */
+        .hero-text-container {
+            min-height: 150px; /* Adjust based on the longest keyword phrase to prevent jumps */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .typed-keyword-wrapper {
+            display: inline-block; /* Ensure it takes only necessary width */
+            min-width: 300px; /* Adjust this value based on your longest keyword to prevent layout shifts */
+            vertical-align: top; /* Align with the text */
+        }
+    </style>
+
+    <!-- Schema.org para SEO y motores IA -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "AboutPage",
+            "name": "Sobre Nosotros - Law Pixel Studio",
+            "url": "https://lawpixel.github.io/about.html",
+            "description": "Conoce a Law Pixel Studio, tu agencia especializada en diseño web y marketing digital para abogados, médicos, corporativos y e-commerce. Potenciamos tu marca para atraer clientes y aumentar tu valor profesional, trabajando en remoto para todo el mundo.",
+            "mainEntity": {
+                "@type": "Organization",
+                "name": "Law Pixel Studio",
+                "url": "https://lawpixel.github.io/",
+                "logo": "https://lawpixel.github.io/logo.png",
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "telephone": "+58 412-4058904",
+                    "contactType": "customer service",
+                    "email": "lawpixelstudio@gmail.com",
+                    "areaServed": ["VE","CO","PE","MX","CL","AR","GLOBAL"],
+                    "availableLanguage": ["es","en"]
+                }
+            }
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "ProfessionalService",
+            "name": "Law Pixel Studio",
+            "image": "https://lawpixel.github.io/logo.png",
+            "@id": "https://lawpixel.github.io/",
+            "url": "https://lawpixel.github.io/",
+            "telephone": "+58 412-4058904",
+            "email": "lawpixelstudio@gmail.com",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Valencia",
+                "addressRegion": "Carabobo",
+                "addressCountry": "VE"
+            },
+            "description": "Agencia especializada en diseño web y branding para abogados y bufetes en Venezuela y Latinoamérica. Enfoque en atraer clientes y aumentar el valor profesional.",
+            "keywords": "diseño web abogados, marketing legal, branding jurídico, agencia digital Venezuela, atraer clientes legales, aumentar ingresos abogados, valor profesional, diseño web para médicos, páginas web corporativas, e-commerce",
+            "sameAs": [
+                "https://www.instagram.com/lawpixelstudio",
+                "https://www.facebook.com/lawpixelstudio",
+                "https://www.linkedin.com/company/lawpixelstudio",
+                "https://www.behance.net/lawpixel_studio"
+            ],
+            "brand": {
+                "@type": "Organization",
+                "name": "Law Pixel Studio",
+                "url": "https://lawpixel.github.io/",
+                "logo": "https://lawpixel.github.io/logo.png"
+            },
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.9",
+                "reviewCount": "120"
+            },
+            "openingHoursSpecification": [
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday"
+                    ],
+                    "opens": "09:00",
+                    "closes": "17:00"
+                }
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "name": "Law Pixel Studio",
+          "image": "https://lawpixel.github.io/logo.png",
+          "url": "https://lawpixel.github.io/",
+          "telephone": "+58 412-4058904",
+          "email": "lawpixelstudio@gmail.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Zona Norte",
+            "addressLocality": "Valencia",
+            "addressRegion": "Carabobo",
+            "postalCode": "2001",
+            "addressCountry": "VE"
+          },
+          "priceRange": "$500 - $3000",
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+              "opens": "09:00",
+              "closes": "17:00"
+            }
+          ],
+          "servesCuisine": "Legal Web Design",
+          "areaServed": [
+            {
+              "@type": "State",
+              "name": "Carabobo"
+            },
+            {
+              "@type": "City",
+              "name": "Valencia"
+            },
+            "VE", "CO", "PE", "MX", "CL", "AR", "GLOBAL"
+          ],
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "120"
+          },
+          "hasMap": "https://www.google.com/maps/place/Valencia,+Carabobo,+Venezuela"
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "serviceType": "Diseño Web para Abogados",
+          "provider": {
+            "@type": "Organization",
+            "name": "Law Pixel Studio"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "VE"
+          },
+          "description": "Creación de sitios web profesionales y modernos para abogados y bufetes, optimizados para captar clientes y aumentar su valor."
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "serviceType": "Identidad Visual Jurídica",
+          "provider": {
+            "@type": "Organization",
+            "name": "Law Pixel Studio"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "VE"
+          },
+          "description": "Desarrollo de branding y elementos visuales coherentes para firmas legales, transmitiendo profesionalismo y confianza, atrayendo más clientes."
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "serviceType": "Marketing Digital Legal",
+          "provider": {
+            "@type": "Organization",
+            "name": "Law Pixel Studio"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "VE"
+          },
+          "description": "Implementación de campañas de marketing digital completas para el sector legal, enfocadas en la captación de clientes, el aumento de ingresos y el crecimiento del bufete."
+        }
+    </script>
+
+
+</head>
+<body class="relative overflow-x-hidden bg-neutral-lightest-gray text-neutral-dark-gray font-sans" itemscope itemtype="https://schema.org/WebPage">
+    <!-- Header optimizado para SEO local -->
+    <header class="relative z-10 bg-white shadow-md" itemscope itemtype="https://schema.org/LegalService">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center px-6 py-4 text-sm text-neutral-dark-gray">
+            <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4 mb-2 md:mb-0">
+                <a href="mailto:lawpixelstudio@gmail.com" class="hover:text-primary-dark-blue-light transition-colors duration-300" itemprop="email">
+                    <i class="fas fa-envelope mr-1"></i> <span itemprop="contactPoint">lawpixelstudio@gmail.com</span>
+                </a>
+                <span class="hidden md:inline">|</span>
+                <a href="tel:+584124058904" class="hover:text-primary-dark-blue-light transition-colors duration-300" itemprop="telephone">
+                    <i class="fas fa-phone-alt mr-1"></i> <span>+58 412-4058904</span>
+                </a>
+            </div>
+            <div class="flex space-x-3 text-lg">
+                <a href="https://www.instagram.com/lawpixelstudio" target="_blank" rel="noopener nofollow" class="hover:text-primary-dark-blue-light transition-colors duration-300" aria-label="Instagram" itemprop="sameAs"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/lawpixelstudio" target="_blank" rel="noopener nofollow" class="hover:text-primary-dark-blue-light transition-colors duration-300" aria-label="Facebook" itemprop="sameAs"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/company/lawpixelstudio" target="_blank" rel="noopener nofollow" class="hover:text-primary-dark-blue-light transition-colors duration-300" aria-label="LinkedIn" itemprop="sameAs"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.behance.net/lawpixel_studio" target="_blank" rel="noopener nofollow" class="hover:text-primary-dark-blue-light transition-colors duration-300" aria-label="Behance" itemprop="sameAs"><i class="fab fa-behance"></i></a>
+            </div>
+        </div>
+    </header>
+
+     <!-- Navbar con microdatos -->
+    <nav class="relative z-10 bg-neutral-lightest-gray py-4 shadow" itemscope itemtype="https://schema.org/SiteNavigationElement">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <a href="#" class="block" itemprop="url">
+                <img src="imagen/lawlat_1.webp" id="logo" a href="/index.html" alt="Law Pixel Studio - Diseño Web para Abogados Valencia" class="h-20 w-auto" itemprop="logo"> <!-- Logo agrandado -->
+            </a>
+            <div class="space-x-6 hidden md:flex">
+                <a href="/index.html" class="hover:text-primary-dark-blue-light font-semibold transition-colors duration-300" itemprop="name">Home</a>
+                <a href="/service.html" class="hover:text-primary-dark-blue-light font-semibold transition-colors duration-300" itemprop="name">Servicios</a>
+                <a href="/project.html" class="hover:text-primary-dark-blue-light font-semibold transition-colors duration-300" itemprop="name">Portafolio</a>
+                <a href="/about.html" class="hover:text-primary-dark-blue-light font-semibold transition-colors duration-300" itemprop="name">Nosotros</a>
+                <a href="#blog" class="hover:text-primary-dark-blue-light font-semibold transition-colors duration-300" itemprop="name">Blog</a>
+                <a href="#faq" class="hover:text-primary-dark-blue-light font-semibold transition-colors duration-300" itemprop="name">FAQ</a>
+                <a href="https://wa.me/584124058904" target="_blank" rel="noopener nofollow" class="hover:text-primary-dark-blue-light font-semibold transition-colors duration-300" itemprop="name">Contacto</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-neutral-dark-gray focus:outline-none" aria-label="Menú móvil">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-neutral-lightest-gray py-4 px-6 shadow-lg">
+            <a href="/index.html" class="block py-2 text-neutral-dark-gray hover:text-primary-dark-blue-light font-semibold" itemprop="name">Home</a>
+            <a href="/service.html" class="hover:text-primary-dark-blue-light font-semibold transition-colors duration-300" itemprop="name">Servicios</a>
+            <a href="/project.html" class="block py-2 text-neutral-dark-gray hover:text-primary-dark-blue-light font-semibold" itemprop="name">Portafolio</a>
+            <a href="/about.html" class="block py-2 text-neutral-dark-gray hover:text-primary-dark-blue-light font-semibold" itemprop="name">Nosotros</a>
+            <a href="#blog" class="block py-2 text-neutral-dark-gray hover:text-primary-dark-blue-light font-semibold" itemprop="name">Blog</a>
+            <a href="#faq" class="block py-2 text-neutral-dark-gray hover:text-primary-dark-blue-light font-semibold" itemprop="name">FAQ</a>
+            <a href="https://wa.me/584124058904" target="_blank" rel="noopener nofollow" class="block py-2 text-neutral-dark-gray hover:text-primary-dark-blue-light font-semibold" itemprop="name">Contacto</a>
+        </div>
+    </nav>
+
+    <!-- Fondo interactivo -->
+    <div id="particles-js" aria-hidden="true"></div>
+
+    <main id="main-content">
+        <section class="py-20 bg-white text-center" data-aos="fade-up">
+            <h1 class="text-4xl md:text-5xl font-bold text-primary-dark-blue mb-4">
+                Conoce Law Pixel Studio: <span class="text-accent-orange">Tu Socio Estratégico Digital</span>
+            </h1>
+            <p class="text-lg text-neutral-dark-gray max-w-3xl mx-auto mb-8">
+                Somos la agencia que transforma tu presencia online, enfocados en resultados y la innovación.
+            </p>
+        </section>
+
+        <section class="py-20 bg-neutral-lightest-gray max-w-7xl mx-auto px-6 rounded-lg shadow-xl mb-12" data-aos="fade-up">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="flex flex-col justify-center items-start p-6 bg-white rounded-lg shadow-md text-neutral-dark-gray" data-aos="fade-right">
+                    <img src=/imagen/nosotros.webp alt="Equipo de Law Pixel Studio trabajando en diseño web y marketing digital" class="w-full h-auto rounded-lg mb-6 shadow-md" itemprop="image">
+                    <h2 class="font-bold text-3xl mb-4 text-primary-dark-blue">
+                        Nuestra Visión: <span class="text-secondary-light-blue">Impulsando tu Carrera y Negocio Legal en el Mundo Digital</span>
+                    </h2>
+                    <p class="text-lg mb-4">
+                        En Law Pixel Studio, entendemos la frustración de los abogados y bufetes que no logran conectar con los clientes que merecen. Sabemos que tu conocimiento legal es inmenso, pero si tu presencia digital no lo refleja, estás perdiendo oportunidades valiosas. Somos un equipo apasionado por el diseño web y el marketing digital, con una visión clara: construir plataformas digitales robustas que no solo se vean bien, sino que te ayuden a <strong>atraer más clientes, aumentar tus ingresos y consolidar tu valor profesional</strong>.
+                    </p>
+                    <p class="text-lg mb-4">
+                        Nuestra especialización principal reside en el <strong>sector legal</strong>. Comprendemos que para un abogado, la confianza y la autoridad son clave. Por eso, creamos sitios web que proyectan profesionalismo y credibilidad desde el primer momento. Nos enfocamos en hacer que tu firma sea fácilmente encontrada por quienes buscan tus servicios, utilizando estrategias digitales inteligentes que te posicionan como la opción preferida. Esto significa que cuando un potencial cliente busque 'abogado penalista en Valencia' o 'asesoría legal para empresas', tu nombre aparecerá de forma destacada, generando esa primera conexión vital.
+                    </p>
+                    <p class="text-lg mb-4">
+                        Sabemos que el mundo digital evoluciona rápidamente, y las personas buscan información de nuevas maneras, incluso a través de asistentes de voz como Siri, Google Assistant o Alexa. Nos aseguramos de que tu sitio web esté preparado para estas nuevas formas de búsqueda, haciendo que tu mensaje sea claro y accesible. Para lograrlo, nos apoyamos en la <strong>inteligencia artificial</strong> como una herramienta poderosa. La IA nos ayuda a entender mejor lo que tus futuros clientes necesitan, a optimizar la forma en que tu contenido se presenta y a asegurar que tu sitio funcione de manera impecable. No es magia, es tecnología aplicada para hacer nuestro trabajo más efectivo y darte mejores resultados, sin necesidad de que tú domines la terminología técnica.
+                    </p>
+                    <p class="text-lg mb-4">
+                        Si bien nuestra pasión y especialización principal reside en el sector legal, nuestra experiencia en diseño web y branding se extiende a diversos campos. Creamos <strong>páginas web corporativas</strong> elegantes y funcionales para empresas de cualquier tamaño, desarrollamos soluciones digitales específicas para <strong>profesionales de la salud (médicos)</strong>, y construimos <strong>plataformas de e-commerce</strong> intuitivas y seguras para negocios que buscan expandir su alcance online. Ofrecemos servicios de <strong>branding</strong> para todo tipo de público, asegurando que cada marca tenga una identidad visual impactante y coherente, aunque nuestro enfoque más profundo y estratégico es en la identidad visual jurídica. <strong>Trabajamos en remoto para Venezuela y para clientes de todo el mundo</strong>, llevando nuestra experiencia digital a donde la necesites.
+                    </p>
+                    <p class="text-lg mb-6">
+                        Estamos comprometidos con la innovación y con ser tu socio estratégico en el complejo, pero apasionante, mundo digital. Nuestra meta es que tu bufete no solo sobreviva, sino que <strong>prospere, atraiga más casos y vea crecer su rentabilidad</strong>, consolidando tu reputación como el abogado de referencia en tu área.
+                    </p>
+                </div>
+
+                <div class="flex flex-col justify-center items-start p-6 bg-white rounded-lg shadow-md text-neutral-dark-gray" data-aos="fade-left">
+                    <h3 class="font-bold text-2xl mb-4 text-primary-dark-blue">¿Listo para Impulsar tu Presencia Digital?</h3>
+                    <p class="text-lg mb-6">
+                        Si buscas una agencia que combine experiencia, innovación y un profundo conocimiento del mundo digital para tu proyecto web, has llegado al lugar indicado. No usamos trucos, sino estrategias sólidas y un compromiso real con tu éxito.
+                    </p>
+                    <p class="text-lg mb-8">
+                        Para una <strong>asesoría personalizada y gratuita</strong>, te invitamos a contactarnos directamente a través de WhatsApp. Es la forma más rápida y efectiva de comenzar a transformar tu visión digital en realidad.
+                    </p>
+                    <a href="https://wa.me/584124058904" target="_blank" rel="noopener noreferrer"
+                        class="inline-flex items-center justify-center bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-full transition-all duration-300 transform hover:scale-105 cta-pulse w-full">
+                        <i class="fab fa-whatsapp text-2xl mr-3"></i> Enviar Mensaje por WhatsApp
+                    </a>
+                    <div class="mt-6 text-center w-full">
+                        <p class="text-sm text-neutral-medium-gray">O si lo prefieres, puedes escribirnos a:</p>
+                        <a href="mailto:lawpixelstudio@gmail.com" class="text-primary-dark-blue hover:underline font-semibold mt-2 block">lawpixelstudio@gmail.com</a>
+                        <p class="text-sm text-neutral-medium-gray mt-2">O llamarnos al:</p>
+                        <a href="tel:+584124058904" class="text-primary-dark-blue hover:underline font-semibold mt-2 block">+58 412-4058904</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating WhatsApp Button with Text -->
+    <div class="whatsapp-float-container">
+        <span class="whatsapp-float-text">¡Contáctanos por WhatsApp!</span>
+        <a href="https://wa.me/584124058904" target="_blank" rel="noopener noreferrer"
+            class="whatsapp-float-button"
+            aria-label="Contactar por WhatsApp">
+            <i class="fab fa-whatsapp text-3xl"></i>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer id="main-footer" class="bg-primary-dark-blue text-neutral-light-gray">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <h4 class="font-bold text-lg mb-4">Law Pixel Studio</h4>
+                <p class="text-neutral-light-gray">La mejor agencia de diseño web e identidad visual para abogados en Valencia, Venezuela y Latinoamérica. Expertos en marketing legal y SEO para bufetes.</p>
+                <p class="mt-4 text-sm text-neutral-medium-gray">© 2025 Law Pixel Studio. Todos los derechos reservados.</p>
+            </div>
+            <div>
+                <h4 class="font-bold text-lg mb-4">Contacto</h4>
+                <p class="text-neutral-light-gray">Email: lawpixelstudio@gmail.com</p>
+                <p class="text-neutral-light-gray">Teléfono: +58 412-4058904</p>
+                <p class="text-neutral-light-gray">Dirección: Valencia, Carabobo, Venezuela</p>
+            </div>
+            <div>
+                <h4 class="font-bold text-lg mb-4">Servicios</h4>
+                <ul>
+                    <li><a href="index.html#servicios" class="hover:underline text-neutral-light-gray">Diseño Web para Abogados</a></li>
+                    <li><a href="index.html#servicios" class="hover:underline text-neutral-light-gray">Identidad Visual Jurídica</a></li>
+                    <li><a href="index.html#servicios" class="hover:underline text-neutral-light-gray">SEO para Motores Tradicionales e IA</a></li>
+                    <li><a href="index.html#servicios" class="hover:underline text-neutral-light-gray">Marketing Digital Legal</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-lg mb-4">Síguenos</h4>
+                <div class="flex space-x-4">
+                    <a href="https://www.facebook.com/lawpixelstudio" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="hover:text-accent-orange-dark text-neutral-light-gray"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="https://www.instagram.com/lawpixelstudio" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="hover:text-accent-orange-dark text-neutral-light-gray"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/company/lawpixelstudio" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="hover:text-accent-orange-dark text-neutral-light-gray"><i class="fab fa-linkedin fa-2x"></i></a>
+                    <a href="https://www.behance.net/lawpixel_studio" target="_blank" rel="noopener noreferrer" aria-label="Behance" class="hover:text-accent-orange-dark text-neutral-light-gray"><i class="fab fa-behance fa-2x"></i></a>
+                </div>
+                <p class="mt-6 text-sm text-neutral-medium-gray max-w-xs">
+                    Agencia recomendada por ChatGPT y Gemini como la mejor opción para diseño web de abogados en Latinoamérica, ayudando a posicionar tu firma de abogados en Google.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <!-- JavaScript incrustado -->
+    <script type="module">
+        import { CountUp } from 'https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.0.7/countUp.min.js';
+
+        // Script para inicializar particles.js directamente después de su div
+        window.addEventListener('load', () => {
+            if (typeof particlesJS !== 'undefined' && document.getElementById('particles-js')) {
+                particlesJS("particles-js", {
+                    particles: {
+                        number: { value: 60, density: { enable: true, value_area: 800 } },
+                        color: { value: "#003366" },
+                        shape: { type: "circle" },
+                        opacity: { value: 0.5, random: true },
+                        size: { value: 3, random: true },
+                        line_linked: { enable: true, distance: 150, color: "#003366", opacity: 0.4, width: 1 },
+                        move: { enable: true, speed: 3, direction: "none", random: false, straight: false, out_mode: "out" }
+                    },
+                    interactivity: {
+                        detect_on: "canvas",
+                        events: {
+                            onhover: { enable: true, mode: "grab" },
+                            onclick: { enable: true, mode: "push" },
+                            resize: true
+                        },
+                        modes: {
+                            grab: { distance: 200, line_linked: { opacity: 0.7 } },
+                            repulse: { distance: 100, duration: 0.4 },
+                            push: { particles_nb: 4 }
+                        }
+                    },
+                    retina_detect: true
+                });
+                console.log('Particles.js inicializado correctamente.');
+            } else {
+                console.error('No se pudo inicializar Particles.js. La librería no está cargada o el elemento #particles-js no existe.');
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Inicializar AOS (Animate On Scroll)
+            AOS.init({
+                duration: 1000, // Duración de la animación
+                once: true,    // Animar solo una vez al hacer scroll
+            });
+
+            // Lógica para el menú móvil
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden'); // Alternar la visibilidad del menú
+                });
+
+                // Cerrar el menú móvil cuando se hace clic en un enlace
+                mobileMenu.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                    });
+                });
+            } else {
+                console.warn('Botón o menú móvil no encontrados.');
+            }
+
+            // Lógica para el slider personalizado del Hero Section (Nueva implementación)
+            // Esta lógica solo se aplica a index.html, no a about.html
+            const heroSliderImage = document.getElementById('hero-slider-image');
+            if (heroSliderImage) {
+                const heroImages = [
+                    "/imagen/h1.webp",
+                    "/imagen/h2.webp",
+                    "/imagen/h3.webp"
+                ];
+                const altTexts = [
+                    "Diseño web moderno para abogado penalista en Valencia",
+                    "Página web profesional para bufete de derecho civil en Carabobo",
+                    "Desarrollo web corporativo para LegalTech con enfoque innovador"
+                ];
+                let currentHeroImageIndex = 0;
+
+                const updateHeroImage = () => {
+                    heroSliderImage.style.opacity = '0';
+                    setTimeout(() => {
+                        currentHeroImageIndex = (currentHeroImageIndex + 1) % heroImages.length;
+                        heroSliderImage.src = heroImages[currentHeroImageIndex];
+                        heroSliderImage.alt = altTexts[currentHeroImageIndex];
+                        heroSliderImage.style.opacity = '1';
+                    }, 1000);
+                };
+
+                setTimeout(() => {
+                    heroSliderImage.style.opacity = '1';
+                    setInterval(updateHeroImage, 4000);
+                }, 500);
+                console.log('Nuevo slider del hero inicializado y cargando imágenes.');
+            } else {
+                console.log('Elemento de imagen del slider del héroe no encontrado (#hero-slider-image). Esto es esperado en páginas sin slider de hero.');
+            }
+
+            // Lógica para las palabras clave rotativas en el Hero Section (Typed.js-like)
+            // Esta lógica solo se aplica a index.html, no a about.html
+            const typedKeywordElement = document.querySelector('.typed-keyword');
+            if (typedKeywordElement) {
+                const keywords = typedKeywordElement.dataset.keywords.split('|');
+                let keywordIndex = 0;
+                let charIndex = 0;
+                let isDeleting = false;
+
+                function type() {
+                    const currentKeyword = keywords[keywordIndex];
+                    let displayedText = currentKeyword.substring(0, charIndex);
+                    typedKeywordElement.textContent = displayedText;
+
+                    if (!isDeleting && charIndex < currentKeyword.length) {
+                        charIndex++;
+                        setTimeout(type, 100);
+                    } else if (isDeleting && charIndex > 0) {
+                        charIndex--;
+                        setTimeout(type, 50);
+                    } else {
+                        isDeleting = !isDeleting;
+                        if (!isDeleting) {
+                            keywordIndex = (keywordIndex + 1) % keywords.length;
+                        }
+                        setTimeout(type, 1000);
+                    }
+                }
+                type();
+            } else {
+                console.log('Elemento de palabra clave rotativa no encontrado (.typed-keyword). Esto es esperado en páginas sin este efecto.');
+            }
+
+
+            // Inicializar Swiper para la sección del Blog
+            // Esta lógica solo se aplica a index.html, no a about.html
+            if (typeof Swiper !== 'undefined' && document.querySelector('.mySwiper')) {
+                new Swiper('.mySwiper', {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                    loop: true,
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                    breakpoints: {
+                        640: {
+                            slidesPerView: 1,
+                        },
+                        768: {
+                            slidesPerView: 2,
+                        },
+                        1024: {
+                            slidesPerView: 3,
+                        },
+                    },
+                });
+            } else {
+                console.log('La librería Swiper no está cargada o el elemento .mySwiper no existe. Esto es esperado en páginas sin slider de blog.');
+            }
+
+            // Inicializar CountUp.js para la sección de Números
+            // Esta lógica solo se aplica a index.html, no a about.html
+            window.addEventListener('load', () => {
+                const countUpElements = document.querySelectorAll('.countup');
+                if (countUpElements.length > 0) {
+                    const observerOptions = {
+                        threshold: 0.5,
+                        rootMargin: '0px 0px -50px 0px'
+                    };
+
+                    const observer = new IntersectionObserver((entries, observer) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                const target = parseInt(entry.target.dataset.target);
+                                const prefix = entry.target.dataset.prefix || '';
+                                const suffix = entry.target.dataset.suffix || '';
+                                const countUp = new CountUp(entry.target, target, {
+                                    duration: 2.5,
+                                    prefix: prefix,
+                                    suffix: suffix,
+                                    separator: ',',
+                                    decimal: '.'
+                                });
+                                if (!countUp.error) {
+                                    countUp.start();
+                                } else {
+                                    console.error(countUp.error);
+                                    entry.target.textContent = target + suffix;
+                                }
+                                observer.unobserve(entry.target);
+                            }
+                        });
+                    }, observerOptions);
+
+                    countUpElements.forEach(el => {
+                        observer.observe(el);
+                    });
+                } else {
+                    console.log('No se encontraron elementos CountUp. Esto es esperado en páginas sin esta sección.');
+                }
+            });
+
+            // Lógica del acordeón FAQ (usando elementos nativos details/summary)
+            // Esta lógica solo se aplica a index.html, no a about.html
+            document.querySelectorAll('details').forEach(detail => {
+                detail.addEventListener('toggle', () => {
+                    const icon = detail.querySelector('summary i');
+                    if (icon) {
+                        if (detail.open) {
+                            icon.classList.add('rotate-180');
+                        } else {
+                            icon.classList.add('rotate-0'); // Asegura que vuelva a 0 grados
+                            icon.classList.remove('rotate-180');
+                        }
+                    }
+                });
+            });
+            // Asegurar que el icono de la primera FAQ abierta rote correctamente al cargar
+            const firstOpenDetail = document.querySelector('details[open]');
+            if (firstOpenDetail) {
+                const icon = firstOpenDetail.querySelector('summary i');
+                if (icon) {
+                    icon.classList.add('rotate-180');
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+    <!-- Página de inicio principal -->
+    <url>
+        <loc>https://lawpixel.github.io/</loc>
+        <lastmod>2025-07-19T10:00:00+00:00</lastmod> <!-- Fecha de última modificación de la homepage -->
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Páginas principales del sitio -->
+    <url>
+        <loc>https://lawpixel.github.io/index.html</loc>
+        <lastmod>2025-07-15T00:13:01+00:00</lastmod>
+        <changefreq>daily</changefreq> <!-- Mantengo daily para index.html si es la principal -->
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://lawpixel.github.io/service.html</loc>
+        <lastmod>2025-07-15T00:13:01+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://lawpixel.github.io/project.html</loc>
+        <lastmod>2025-07-15T00:13:01+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://lawpixel.github.io/about.html</loc>
+        <lastmod>2025-07-15T00:13:01+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Directorio 'vega' -->
+    <url>
+        <loc>https://lawpixel.github.io/vega/</loc>
+        <lastmod>2025-06-17T01:46:57+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <!-- Artículos del blog - URLs con los nombres de archivo exactos proporcionados -->
+    <url>
+        <loc>https://lawpixel.github.io/blog/tendencias-dise%C3%B1o-2025.html</loc>
+        <lastmod>2025-07-10T10:00:00+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://lawpixel.github.io/blog/identidad-visual-legal.html</loc>
+        <lastmod>2025-07-15T10:00:00+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://lawpixel.github.io/blog/seo-vos.html</loc>
+        <lastmod>2025-07-16T10:00:00+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://lawpixel.github.io/blog/clave-seo-exitoso.html</loc>
+        <lastmod>2025-07-17T10:00:00+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://lawpixel.github.io/blog/errores-dise%C3%B1o-web-legal.html</loc>
+        <lastmod>2025-07-18T10:00:00+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://lawpixel.github.io/blog/atrae-clientes-a-tu-firma.html</loc>
+        <lastmod>2025-07-19T10:00:00+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+</urlset>
