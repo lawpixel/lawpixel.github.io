@@ -72,6 +72,12 @@
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
+     <url>
+        <loc>https://lawpixel.github.io/blog/blog-google-abogados-web.html</loc>
+        <lastmod>2025-07-30</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
 
     <url>
         <loc>https://lawpixel.github.io/valencia/</loc>
