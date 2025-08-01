@@ -3,91 +3,115 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
+    <!-- Página principal - Prioridad máxima -->
     <url>
         <loc>https://lawpixel.github.io/</loc>
-        <lastmod>2025-07-27T22:35:21-04:00</lastmod> <changefreq>daily</changefreq>
+        <lastmod>2025-07-31</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
 
+    <!-- Páginas principales del sitio - Alta prioridad -->
     <url>
         <loc>https://lawpixel.github.io/service.html</loc>
-        <lastmod>2025-07-27T22:35:21-04:00</lastmod> <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <lastmod>2025-07-31</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
     </url>
+
     <url>
         <loc>https://lawpixel.github.io/project.html</loc>
-        <lastmod>2025-07-27T22:35:21-04:00</lastmod> <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <lastmod>2025-07-31</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
     </url>
+
+    <!-- Página de blog principal - Alta prioridad -->
+    <url>
+        <loc>https://lawpixel.github.io/valencia/blog.html</loc>
+        <lastmod>2025-07-31</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Páginas institucionales -->
     <url>
         <loc>https://lawpixel.github.io/about.html</loc>
-        <lastmod>2025-07-27T22:35:21-04:00</lastmod> <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://lawpixel.github.io/contact.html</loc> <lastmod>2025-07-27T22:35:21-04:00</lastmod>
+        <lastmod>2025-07-31</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
 
     <url>
-        <loc>https://lawpixel.github.io/vega/</loc>
-        <lastmod>2025-06-17T01:46:57+00:00</lastmod> <changefreq>monthly</changefreq>
+        <loc>https://lawpixel.github.io/contact.html</loc>
+        <lastmod>2025-07-31</lastmod>
+        <changefreq>monthly</changefreq>
         <priority>0.6</priority>
+    </url>
+
+    <!-- Páginas de ubicación -->
+    <url>
+        <loc>https://lawpixel.github.io/valencia/</loc>
+        <lastmod>2025-07-31</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://lawpixel.github.io/vega/</loc>
+        <lastmod>2025-07-31</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Artículos de blog ordenados por fecha de publicación (más recientes primero) -->
+    <url>
+        <loc>https://lawpixel.github.io/blog/blog-google-abogados-web.html</loc>
+        <lastmod>2025-07-30</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://lawpixel.github.io/blog/atrae-clientes-a-tu-firma.html</loc>
+        <lastmod>2025-07-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://lawpixel.github.io/blog/errores-diseno-web-legal.html</loc>
+        <lastmod>2025-07-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://lawpixel.github.io/blog/clave-seo-exitoso.html</loc>
+        <lastmod>2025-07-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://lawpixel.github.io/blog/seo-vos.html</loc>
+        <lastmod>2025-07-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://lawpixel.github.io/blog/identidad-visual-legal.html</loc>
+        <lastmod>2025-07-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
 
     <url>
         <loc>https://lawpixel.github.io/blog/tendencias-diseno-2025.html</loc>
-        <lastmod>2025-07-10T10:00:00+00:00</lastmod>
-        <changefreq>weekly</changefreq>
+        <lastmod>2025-07-10</lastmod>
+        <changefreq>monthly</changefreq>
         <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://lawpixel.github.io/blog/identidad-visual-legal.html</loc>
-        <lastmod>2025-07-15T10:00:00+00:00</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://lawpixel.github.io/blog/seo-vos.html</loc>
-        <lastmod>2025-07-16T10:00:00+00:00</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://lawpixel.github.io/blog/clave-seo-exitoso.html</loc>
-        <lastmod>2025-07-17T10:00:00+00:00</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://lawpixel.github.io/blog/errores-diseno-web-legal.html</loc>
-        <lastmod>2025-07-18T10:00:00+00:00</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://lawpixel.github.io/blog/atrae-clientes-a-tu-firma.html</loc>
-        <lastmod>2025-07-19T10:00:00+00:00</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-    </url>
-     <url>
-        <loc>https://lawpixel.github.io/blog/blog-google-abogados-web.html</loc>
-        <lastmod>2025-07-30</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
-    <url>
-        <loc>https://lawpixel.github.io/valencia/</loc>
-        <lastmod>2025-07-27T22:35:21-04:00</lastmod> <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://lawpixel.github.io/valencia/blog.html</loc>
-        <lastmod>2025-07-27T22:35:21-04:00</lastmod> <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
     </url>
 
 </urlset>
