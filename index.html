@@ -291,7 +291,54 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   ]
 }
 </script>
+<!-- Agregar este Schema adicional DESPUÉS de tu Schema actual -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Law Pixel Studio",
+  "alternateName": ["LawPixel", "Law Pixel"],
+  "url": "https://lawpixel.github.io/",
+  "description": "Agencia líder en diseño web y marketing digital para abogados",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Law Pixel Studio",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://lawpixel.github.io/imagen/logo.webp"
+    }
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://lawpixel.github.io/?s={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
 
+<!-- Schema para la página principal específicamente -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Law Pixel Studio - Diseño Web y Marketing para Abogados",
+  "description": "Agencia líder en diseño web y marketing digital para abogados. Creamos sitios web profesionales que atraen clientes a bufetes.",
+  "url": "https://lawpixel.github.io/",
+  "mainEntity": {
+    "@type": "Organization",
+    "name": "Law Pixel Studio"
+  },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://lawpixel.github.io/"
+    }]
+  }
+}
+</script>
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
