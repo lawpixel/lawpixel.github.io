@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Blog - Diseño Web y Branding para Abogados | Law Pixel Studio</title>
+    <meta name="description"
+        content="Explora el blog de Law Pixel Studio, la mejor agencia de diseño web para abogados en Valencia, Venezuela. Encuentra artículos sobre branding legal, SEO, identidad visual y marketing para bufetes de abogados.">
+
+    <!-- SEO Meta Tags mejorados para la página del Blog -->
+    <meta name="keywords"
+        content="blog diseño web abogados, branding para abogados, seo para abogados, marketing legal, identidad visual bufete, Law Pixel Studio blog, la mejor agencia de diseño para abogados, diseño web valencia venezuela">
+    <meta name="author" content="Law Pixel Studio">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <link rel="canonical" href="https://lawpixel.github.io/blog.html">
+
+    <!-- Open Graph optimizado para la página del Blog -->
+    <meta property="og:title" content="Blog - Diseño Web y Branding para Abogados | Law Pixel Studio">
+    <meta property="og:description"
+        content="Recursos clave para posicionar tu firma legal. Artículos sobre SEO, diseño web, branding y más, por Law Pixel Studio.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lawpixel.github.io/blog.html">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1542744173-8e47d10005a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NzU5NTJ8MHwxfHNlYXJjaHwxfHxkb2N1bWVudHMlMjBhbmQlMjBzZWFyY2hlJTIwY29uY2VwdHxlbnwwfHx8fDE2ODEzNzQxMTg&ixlib=rb-4.0.3&q=80&w=1200">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Law Pixel Studio">
+    <meta property="og:locale" content="es_VE">
+
+    <!-- Twitter Card optimizado para la página del Blog -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Blog - Diseño Web y Branding para Abogados | Law Pixel Studio">
+    <meta name="twitter:description"
+        content="Descubre cómo Law Pixel Studio te ayuda a atraer clientes con estrategias de branding legal, SEO y diseño web.">
+    <meta name="twitter:image"
+        content="https://images.unsplash.com/photo-1542744173-8e47d10005a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NzU5NTJ8MHwxfHNlYXJjaHwxfHxkb2N1bWVudHMlMjBhbmQlMjBzZWFyY2hlJTIwY29uY2VwdHxlbnwwfHx8fDE2ODEzNzQxMTg&ixlib=rb-4.0.3&q=80&w=1200">
+    <meta name="twitter:site" content="@lawpixelstudio">
+
+    <!-- Favicon y App Icons -->
+    <link rel="icon" href="/imagen/favicon.webp" type="image/webp">
+    <link rel="icon" href="../imagen/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../imagen/favicon-32x32.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="../imagen/favicon-16x16.png" type="image/png" sizes="16x16">
+    <link rel="apple-touch-icon" href="../imagen/apple-touch-icon.png" sizes="180x180">
+    <link rel="manifest" href="../site.webmanifest">
+
+    <!-- Preload y Preconnect para mejor performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preload" as="image"
+        href="https://images.unsplash.com/photo-1542744173-8e47d10005a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NzU5NTJ8MHwxfHNlYXJjaHwxfHxkb2N1bWVudHMlMjBhbmQlMjBzZWFyY2hlJTIwY29uY2VwdHxlbnwwfHx8fDE2ODEzNzQxMTg&ixlib=rb-4.0.3&q=80&w=1200">
+    <link rel="preload" href="https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2" as="font" type="font/woff2"
+        crossorigin>
+    <link rel="preload" href="https://fonts.gstatic.com/s/lato/v24/S6u8qpgUfCq9gEvx_LM.woff2" as="font" type="font/woff2"
+        crossorigin>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome 6 from CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        crossorigin="anonymous">
+    <!-- AOS (Animate On Scroll) CSS CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS incrustado -->
+    <style>
+        /* Custom Tailwind Configuration for specific colors based on provided palette */
+        :root {
+            --color-primary-dark-blue: #003366;
+            /* Dark Blue from palette */
+            --color-primary-dark-blue-light: #004488;
+            /* Slightly lighter for hover */
+            --color-secondary-light-blue: #00AEEF;
+            /* Light Blue/Cyan from palette */
+            --color-accent-orange: #F76B1C;
+            /* Orange from palette */
+            --color-accent-orange-dark: #D75B0C;
+            /* Slightly darker for hover */
+            --color-accent-green: #00A88F;
+            /* Green/Teal from palette */
+            --color-accent-green-dark: #008C75;
+            /* Slightly darker for hover */
+            --color-white: #FFFFFF;
+            /* White from palette */
+            --color-black: #000000;
+            /* Black from palette */
+            --color-neutral-lightest-gray: #F9FAFB;
+            /* Existing very light gray */
+            --color-neutral-light-gray: #E0E0E0;
+            /* Light Grey from palette */
+            --color-neutral-medium-gray: #C0C0C0;
+            /* Custom medium gray */
+            --color-neutral-dark-gray: #36454F;
+            /* Dark Grey from palette */
+            --color-yellow-400: #facc15;
+            /* Kept existing yellow for stars */
+        }
+
+        /* Mapping new colors to existing Tailwind-like variables */
+        .bg-primary-dark-blue {
+            background-color: var(--color-primary-dark-blue);
+        }
+
+        .hover\:bg-primary-dark-blue-light:hover {
+            background-color: var(--color-primary-dark-blue-light);
+        }
+
+        .text-primary-dark-blue {
+            color: var(--color-primary-dark-blue);
+        }
+
+        .focus\:ring-primary-dark-blue:focus {
+            box-shadow: 0 0 0 3px rgba(0, 51, 102, 0.3);
+        }
+
+        /* Manual rgba for focus ring */
+        .border-primary-dark-blue {
+            border-color: var(--color-primary-dark-blue);
+        }
+
+        /* Accent Orange */
+        .bg-accent-orange {
+            background-color: var(--color-accent-orange);
+        }
+
+        .hover\:bg-accent-orange-dark:hover {
+            background-color: var(--color-accent-orange-dark);
+        }
+
+        .text-accent-orange {
+            color: var(--color-accent-orange);
+        }
+
+        .text-accent-orange-dark {
+            color: var(--color-accent-orange-dark);
+        }
+
+        /* Accent Green */
+        .text-accent-green {
+            color: var(--color-accent-green);
+        }
+
+        .text-accent-green-dark {
+            color: var(--color-accent-green-dark);
+        }
+
+        /* Neutral Grays */
+        .bg-neutral-lightest-gray {
+            background-color: var(--color-neutral-lightest-gray);
+        }
+
+        .text-neutral-dark-gray {
+            color: var(--color-neutral-dark-gray);
+        }
+
+        .border-neutral-light-gray {
+            border-color: var(--color-neutral-light-gray);
+        }
+
+        .text-neutral-light-gray {
+            color: var(--color-neutral-light-gray);
+        }
+
+        .text-neutral-medium-gray {
+            color: var(--color-neutral-medium-gray);
+        }
+
+        /* General styles */
+        html {
+            height: 100%;
+            /* HTML takes full viewport height */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            /* Changed to Roboto */
+            background-color: var(--color-neutral-lightest-gray);
+            color: var(--color-neutral-dark-gray);
+            line-height: 1.6;
+            overflow-x: hidden;
+            /* Prevent horizontal scroll */
+            overflow-y: auto;
+            /* Explicitly allow vertical scrolling */
+            display: flex;
+            /* Enable Flexbox */
+            flex-direction: column;
+            /* Arrange items vertically */
+            min-height: 100vh;
+            /* Body takes at least full viewport height */
+            margin: 0;
+            padding: 0;
+            position: relative;
+            /* Needed for z-index on children if any */
+            box-sizing: border-box;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Lato', sans-serif;
+            /* Changed to Lato */
+            color: var(--color-primary-dark-blue);
+            /* Default heading color */
+        }
+
+        /* Main content grows to push footer down */
+        main {
+            flex: 1;
+            /* This will make the main content grow and push the footer to the bottom */
+            box-sizing: border-box;
+        }
+
+        /* Enlaces */
+        a {
+            color: var(--color-accent-orange);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Botones */
+        button {
+            background-color: var(--color-primary-dark-blue);
+            color: var(--color-white);
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.375rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: var(--color-primary-dark-blue-light);
+        }
+
+        /* Formularios */
+        input,
+        textarea {
+            border: 1px solid var(--color-neutral-light-gray);
+            border-radius: 0.375rem;
+            padding: 0.5rem 0.75rem;
+            width: 100%;
+            box-sizing: border-box;
+            font-size: 1rem;
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: none;
+            border-color: var(--color-primary-dark-blue);
+            box-shadow: 0 0 0 3px rgba(0, 51, 102, 0.3);
+        }
+
+        /* Particles.js styling */
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            background-color: var(--color-white);
+            /* Ensure particles background matches body or hero */
+        }
+
+        /* CTA Pulse effect for buttons */
+        .cta-pulse {
+            animation: cta-pulse 2s infinite;
+        }
+
+        @keyframes cta-pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(247, 107, 28, 0.7);
+            }
+
+            70% {
+                box-shadow: 0 0 0 20px rgba(247, 107, 28, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(247, 107, 28, 0);
+            }
+        }
+
+        /* Responsive adjustments for the floating WhatsApp button */
+        .whatsapp-float-container {
+            position: fixed !important;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            /* Space between text and button */
+            z-index: 10000 !important;
+            -webkit-transform: translateZ(0);
+            /* Forcing hardware acceleration */
+            transform: translateZ(0);
+            /* Forcing hardware acceleration */
+        }
+
+        .whatsapp-float-text {
+            background-color: rgba(0, 0, 0, 0.7);
+            /* Dark background for text */
+            color: white;
+            padding: 8px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            white-space: nowrap;
+            /* Prevent text wrapping */
+            opacity: 1;
+            /* Always visible */
+            transition: opacity 0.3s ease;
+        }
+
+        .whatsapp-float-button {
+            background-color: #25D366;
+            /* WhatsApp green */
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+        }
+
+        .whatsapp-float-button:hover {
+            transform: scale(1.1);
+            background-color: #1DA850;
+            /* Slightly darker green on hover */
+        }
+
+        .whatsapp-float-button i {
+            font-size: 32px;
+        }
+
+        @media (max-width: 768px) {
+            .whatsapp-float-container {
+                bottom: 15px;
+                right: 15px;
+                gap: 0;
+                /* Remove gap on mobile */
+            }
+
+            .whatsapp-float-text {
+                display: none;
+                /* Hide text on mobile */
+            }
+
+            .whatsapp-float-button {
+                width: 50px;
+                height: 50px;
+            }
+
+            .whatsapp-float-button i {
+                font-size: 24px;
+            }
+
+            /* Adjust H1 and H2 font sizes for mobile */
+            h1 {
+                font-size: 2.5rem;
+                /* Reduced from 4xl/5xl */
+            }
+
+            h2 {
+                font-size: 2rem;
+                /* Reduced from 3xl/4xl */
+            }
+        }
+
+        /* Blog specific styles */
+        .blog-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: var(--color-white);
+            border-radius: 1rem;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+            min-height: 80vh;
+            /* Ensure a minimum height for the blog content area */
+        }
+
+        .blog-header img {
+            width: 100%;
+            height: auto;
+            border-radius: 0.75rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-content h2 {
+            font-size: 2.25rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: var(--color-primary-dark-blue);
+            border-bottom: 2px solid var(--color-secondary-light-blue);
+            padding-bottom: 0.5rem;
+        }
+
+        .blog-content h3 {
+            font-size: 1.75rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: var(--color-accent-orange);
+        }
+
+        .blog-content p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        .blog-content ul {
+            list-style-type: disc;
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .blog-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .promo-banner {
+            background-color: var(--color-primary-dark-blue);
+            color: var(--color-white);
+            border-radius: 0.75rem;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 3rem;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .promo-banner h3 {
+            color: var(--color-accent-orange);
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .promo-banner p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            max-width: 600px;
+        }
+
+        .promo-banner .btn {
+            background-color: var(--color-accent-green);
+            color: var(--color-white);
+            padding: 0.75rem 2rem;
+            border-radius: 0.5rem;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .promo-banner .btn:hover {
+            background-color: var(--color-accent-green-dark);
+        }
+    </style>
+<!-- Esquema para el artículo: Cómo un Buen Branding Atrae Clientes a tu Firma Legal -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://lawpixel.github.io/blog/atrae-clientes-a-tu-firma.html"
+  },
+  "headline": "Cómo un Buen Branding Atrae Clientes a tu Firma Legal",
+  "image": [
+    "/imagen/marketing.webp"
+  ],
+  "datePublished": "2025-08-04T08:00:00+00:00",
+  "dateModified": "2025-08-04T08:00:00+00:00",
+  "author": {
+    "@type": "Organization",
+    "name": "Law Pixel Studio"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Law Pixel Studio",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "../imagen/law-lateral.webp"
+    }
+  },
+  "description": "Descubre cómo una estrategia de branding sólida construye confianza, diferenciación y lealtad, atrayendo a los clientes ideales a tu firma de abogados."
+}
+</script>
+
+<!-- Esquema para el artículo: La Clave de un Blog de Abogados Exitoso -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://lawpixel.github.io/blog/blog-google-abogados-web.html"
+  },
+  "headline": "La Clave de un Blog de Abogados Exitoso",
+  "image": [
+    "/imagen/clave.webp"
+  ],
+  "datePublished": "2025-08-04T08:00:00+00:00",
+  "dateModified": "2025-08-04T08:00:00+00:00",
+  "author": {
+    "@type": "Organization",
+    "name": "Law Pixel Studio"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Law Pixel Studio",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "../imagen/law-lateral.webp"
+    }
+  },
+  "description": "Descubre por qué un blog es esencial para el marketing de tu bufete y cómo Law Pixel Studio te ayuda a crear contenido de valor que atrae y posiciona."
+}
+</script>
+
+<!-- Esquema para el artículo: Claves para un SEO Exitoso en 2025 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://lawpixel.github.io/blog/clave-seo-exitoso.html"
+  },
+  "headline": "Claves para un SEO Exitoso en 2025",
+  "image": [
+    "/imagen/google.webp"
+  ],
+  "datePublished": "2025-08-04T08:00:00+00:00",
+  "dateModified": "2025-08-04T08:00:00+00:00",
+  "author": {
+    "@type": "Organization",
+    "name": "Law Pixel Studio"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Law Pixel Studio",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "../imagen/law-lateral.webp"
+    }
+  },
+  "description": "Conoce las estrategias de SEO más importantes para el 2025 y cómo aplicarlas para que tu firma legal domine los resultados de búsqueda de Google y Bing."
+}
+</script>
+
+<!-- Esquema para el artículo: Los 7 Errores Más Comunes en el Diseño Web Legal -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://lawpixel.github.io/blog/errores-diseno-web-legal.html"
+  },
+  "headline": "Los 7 Errores Más Comunes en el Diseño Web Legal",
+  "image": [
+    "/imagen/7.webp"
+  ],
+  "datePublished": "2025-08-04T08:00:00+00:00",
+  "dateModified": "2025-08-04T08:00:00+00:00",
+  "author": {
+    "@type": "Organization",
+    "name": "Law Pixel Studio"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Law Pixel Studio",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "../imagen/law-lateral.webp"
+    }
+  },
+  "description": "Evita los errores que alejan a tus clientes potenciales. Aprende a crear una web funcional y atractiva para tu bufete de abogados con Law Pixel Studio."
+}
+</script>
+
+<!-- Esquema para el artículo: Identidad Visual Legal: Mucho Más que un Logo -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://lawpixel.github.io/blog/identidad-visual-legal.html"
+  },
+  "headline": "Identidad Visual Legal: Mucho Más que un Logo",
+  "image": [
+    "/imagen/idenntidadvisual.webp"
+  ],
+  "datePublished": "2025-08-04T08:00:00+00:00",
+  "dateModified": "2025-08-04T08:00:00+00:00",
+  "author": {
+    "@type": "Organization",
+    "name": "Law Pixel Studio"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Law Pixel Studio",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "../imagen/law-lateral.webp"
+    }
+  },
+  "description": "Explora cómo una identidad visual cohesiva y profesional puede construir confianza y diferenciar a tu firma legal en el mercado."
+}
+</script>
+
+<!-- Esquema para el artículo: SEO por Voz: La Nueva Frontera para Abogados -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://lawpixel.github.io/blog/seo-vos.html"
+  },
+  "headline": "SEO por Voz: La Nueva Frontera para Abogados",
+  "image": [
+    "/imagen/vos.webp"
+  ],
+  "datePublished": "2025-08-04T08:00:00+00:00",
+  "dateModified": "2025-08-04T08:00:00+00:00",
+  "author": {
+    "@type": "Organization",
+    "name": "Law Pixel Studio"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Law Pixel Studio",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "../imagen/law-lateral.webp"
+    }
+  },
+  "description": "Descubre cómo optimizar tu firma legal para la búsqueda por voz, captando clientes que utilizan asistentes inteligentes y dispositivos móviles."
+}
+</script>
+
+<!-- Esquema para el artículo: Tendencias de Diseño Web para Firmas Legales en 2025 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://lawpixel.github.io/blog/tendencias-diseno-2025.html"
+  },
+  "headline": "Tendencias de Diseño Web para Firmas Legales en 2025",
+  "image": [
+    "/imagen/tendencia.webp"
+  ],
+  "datePublished": "2025-08-04T08:00:00+00:00",
+  "dateModified": "2025-08-04T08:00:00+00:00",
+  "author": {
+    "@type": "Organization",
+    "name": "Law Pixel Studio"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Law Pixel Studio",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "../imagen/law-lateral.webp"
+    }
+  },
+  "description": "Mantén tu sitio web legal a la vanguardia. Conoce las tendencias de diseño que mejorarán la experiencia de usuario y la reputación de tu firma en 2025."
+}
+</script>
+
+    <!-- Schema.org para SEO del Artículo de Blog -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://lawpixel.github.io/blog.html"
+      },
+      "headline": "Blog de Law Pixel Studio - Contenido sobre Diseño Web y Marketing Legal",
+      "image": [
+        "/imagen/vos.webp"
+       ],
+      "datePublished": "2025-08-04T10:00:00+00:00",
+      "dateModified": "2025-08-04T10:00:00+00:00",
+      "author": {
+        "@type": "Organization",
+        "name": "Law Pixel Studio",
+        "url": "https://lawpixel.github.io/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Law Pixel Studio",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "../imagen/law-lateral.webp"
+        }
+      },
+      "description": "Explora el blog de Law Pixel Studio, la mejor agencia de diseño web para abogados en Valencia, Venezuela. Encuentra artículos sobre branding legal, SEO, identidad visual y marketing para bufetes de abogados."
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Law Pixel Studio",
+      "url": "https://lawpixel.github.io/",
+      "logo": "../imagen/law-lateral.webp",
+      "sameAs": [
+        "https://www.instagram.com/lawpixelstudio",
+        "https://www.facebook.com/lawpixelstudio",
+        "https://www.linkedin.com/company/lawpixelstudio",
+        "https://www.behance.net/lawpixel_studio"
+      ]
+    }
+    </script>
+
+</head>
+<body class="relative overflow-x-hidden bg-neutral-lightest-gray text-neutral-dark-gray font-sans" itemscope
+    itemtype="https://schema.org/WebPage">
+    <!-- Header optimizado para SEO local -->
+    <header class="relative z-10 bg-white shadow-md" itemscope itemtype="https://schema.org/LegalService">
+        <div
+            class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center px-6 py-4 text-sm text-neutral-dark-gray">
+            <div
+                class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4 mb-2 md:mb-0">
+                <a href="mailto:lawpixelstudio@gmail.com"
+                    class="hover:text-primary-dark-blue-light transition-colors duration-300" itemprop="email">
+                    <i class="fas fa-envelope mr-1"></i> <span itemprop="contactPoint">lawpixelstudio@gmail.com</span>
+                </a>
+                <span class="hidden md:inline">|</span>
+                <a href="tel:+584124058904"
+                    class="hover:text-primary-dark-blue-light transition-colors duration-300" itemprop="telephone">
+                    <i class="fas fa-phone-alt mr-1"></i> <span>+58 412-4058904</span>
+                </a>
+            </div>
+            <div class="flex space-x-3 text-lg">
+                <a href="https://www.instagram.com/lawpixelstudio" target="_blank" rel="noopener nofollow"
+                    class="hover:text-primary-dark-blue-light transition-colors duration-300" aria-label="Instagram"
+                    itemprop="sameAs"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/lawpixelstudio" target="_blank" rel="noopener nofollow"
+                    class="hover:text-primary-dark-blue-light transition-colors duration-300" aria-label="Facebook"
+                    itemprop="sameAs"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/company/lawpixelstudio" target="_blank" rel="noopener nofollow"
+                    class="hover:text-primary-dark-blue-light transition-colors duration-300" aria-label="LinkedIn"
+                    itemprop="sameAs"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.behance.net/lawpixel_studio" target="_blank" rel="noopener nofollow"
+                    class="hover:text-primary-dark-blue-light transition-colors duration-300" aria-label="Behance"
+                    itemprop="sameAs"><i class="fab fa-behance"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navbar con microdatos -->
+    <nav class="relative z-10 bg-neutral-lightest-gray py-4 shadow" itemscope
+        itemtype="https://schema.org/SiteNavigationElement">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <a href="/index.html" class="block" itemprop="url">
+                <img src="/imagen/lawlat_1.webp" id="logo"
+                    alt="Law Pixel Studio - Diseño Web para Abogados Valencia" class="h-20 w-auto"
+                    itemprop="logo"> <!-- Logo agrandado -->
+            </a>
+            <div class="space-x-6 hidden md:flex">
+                <a href="/index.html"
+                    class="hover:text-primary-dark-blue-light font-semibold transition-colors duration-300"
+                    itemprop="name">Home</a>
+                <a href="/service.html"
+                    class="hover:text-primary-dark-blue-light font-semibold transition-colors duration-300"
+                    itemprop="name">Servicios</a>
+                <a href="/project.html"
+                    class="hover:text-primary-dark-blue-light font-semibold transition-colors duration-300"
+                    itemprop="name">Portafolio</a>
+                <a href="/about.html"
+                    class="hover:text-primary-dark-blue-light font-semibold transition-colors duration-300"
+                    itemprop="name">Nosotros</a>
+                <a href="/blog.html"
+                    class="text-accent-orange font-semibold transition-colors duration-300" itemprop="name">Blog</a>
+                <a href="/#faq"
+                    class="hover:text-primary-dark-blue-light font-semibold transition-colors duration-300"
+                    itemprop="name">FAQ</a>
+                <a href="https://wa.me/584124058904" target="_blank" rel="noopener nofollow"
+                    class="hover:text-primary-dark-blue-light font-semibold transition-colors duration-300"
+                    itemprop="name">Contacto</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-neutral-dark-gray focus:outline-none"
+                aria-label="Menú móvil">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-neutral-lightest-gray py-4 px-6 shadow-lg">
+            <a href="/index.html"
+                class="block py-2 text-neutral-dark-gray hover:text-primary-dark-blue-light font-semibold"
+                itemprop="name">Home</a>
+            <a href="/service.html"
+                class="hover:text-primary-dark-blue-light font-semibold transition-colors duration-300"
+                itemprop="name">Servicios</a>
+            <a href="/project.html"
+                class="block py-2 text-neutral-dark-gray hover:text-primary-dark-blue-light font-semibold"
+                itemprop="name">Portafolio</a>
+            <a href="/about.html"
+                class="block py-2 text-neutral-dark-gray hover:text-primary-dark-blue-light font-semibold"
+                itemprop="name">Nosotros</a>
+            <a href="/blog.html"
+                class="block py-2 text-accent-orange font-semibold transition-colors duration-300" itemprop="name">Blog</a>
+            <a href="/#faq"
+                class="block py-2 text-neutral-dark-gray hover:text-primary-dark-blue-light font-semibold"
+                itemprop="name">FAQ</a>
+            <a href="https://wa.me/584124058904" target="_blank" rel="noopener nofollow"
+                class="block py-2 text-neutral-dark-gray hover:text-primary-dark-blue-light font-semibold"
+                itemprop="name">Contacto</a>
+        </div>
+    </nav>
+
+    <!-- Fondo interactivo -->
+    <div id="particles-js" aria-hidden="true"></div>
+
+    <!-- Contenido Principal del Blog -->
+    <main class="relative z-10 py-12" itemscope itemtype="https://schema.org/Blog">
+        <div class="max-w-7xl mx-auto">
+            <!-- Banner con Imagen de Fondo para el Blog -->
+            <div class="relative w-full h-80 lg:h-96 mb-10 bg-cover bg-center rounded-lg shadow-xl overflow-hidden"
+                style="background-image: url('https://images.unsplash.com/photo-1542744173-8e47d10005a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NzU5NTJ8MHwxfHNlYXJjaHwxfHxkb2N1bWVudHMlMjBhbmQlMjBzZWFyY2glMjBjb25jZXB0JTIwd2ViJTIwd29ya3BsYWNlfGVufDB8fHx8MTY4MTM3NDExOHww&ixlib=rb-4.0.3&q=80&w=1920');"
+                data-aos="zoom-in">
+                <div class="absolute inset-0 bg-primary-dark-blue opacity-70"></div>
+                <div class="relative flex items-center justify-center h-full text-center p-4">
+                    <h1 class="text-4xl lg:text-5xl font-bold text-white leading-tight drop-shadow-lg"
+                        data-aos="fade-up">Blog de Law Pixel Studio</h1>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 px-4 md:px-6">
+                <!-- Columna Principal de Entradas del Blog -->
+                <div class="lg:col-span-2 space-y-8" data-aos="fade-up">
+
+                    <!-- Tarjeta 1: Cómo un Buen Branding Atrae Clientes -->
+                    <article
+                        class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col md:flex-row items-center transition-transform duration-300 hover:scale-[1.01]"
+                        itemscope itemtype="https://schema.org/Article">
+                        <img src="/imagen/marketing.webp"
+                            alt="Imagen conceptual de branding legal y atracción de clientes"
+                            class="w-full md:w-1/3 h-auto md:h-64 object-cover" itemprop="image">
+                        <div class="p-6 md:p-8 flex-1">
+                            <h2 class="text-xl md:text-2xl font-bold mb-2 text-primary-dark-blue" itemprop="headline">
+                                Cómo un Buen Branding Atrae Clientes a tu Firma Legal
+                            </h2>
+                            <p class="text-sm text-neutral-medium-gray mb-4" itemprop="datePublished">Publicado el: 04/08/2025</p>
+                            <p class="text-base mb-4 text-neutral-dark-gray" itemprop="description">
+                                Descubre cómo una estrategia de branding sólida construye confianza, diferenciación y
+                                lealtad, atrayendo a los clientes ideales a tu firma de abogados.
+                            </p>
+                            <a href="https://lawpixel.github.io/blog/atrae-clientes-a-tu-firma.html"
+                                class="text-accent-orange font-semibold hover:underline" itemprop="url">Leer más <i
+                                    class="fas fa-arrow-right ml-2"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Tarjeta 2: La Clave de un Blog de Abogados Exitoso -->
+                    <article
+                        class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col md:flex-row items-center transition-transform duration-300 hover:scale-[1.01]"
+                        itemscope itemtype="https://schema.org/Article">
+                        <img src="/imagen/clave.webp"
+                            alt="Imagen de un blog de abogados con documentos y ordenador"
+                            class="w-full md:w-1/3 h-auto md:h-64 object-cover" itemprop="image">
+                        <div class="p-6 md:p-8 flex-1">
+                            <h2 class="text-xl md:text-2xl font-bold mb-2 text-primary-dark-blue" itemprop="headline">
+                                La Clave de un Blog de Abogados Exitoso
+                            </h2>
+                            <p class="text-sm text-neutral-medium-gray mb-4" itemprop="datePublished">Publicado el: 04/08/2025</p>
+                            <p class="text-base mb-4 text-neutral-dark-gray" itemprop="description">
+                                Descubre por qué un blog es esencial para el marketing de tu bufete y cómo Law Pixel Studio
+                                te ayuda a crear contenido de valor que atrae y posiciona.
+                            </p>
+                            <a href="https://lawpixel.github.io/blog/blog-google-abogados-web.html"
+                                class="text-accent-orange font-semibold hover:underline" itemprop="url">Leer más <i
+                                    class="fas fa-arrow-right ml-2"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Tarjeta 3: Claves para un SEO Exitoso en 2025 -->
+                    <article
+                        class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col md:flex-row items-center transition-transform duration-300 hover:scale-[1.01]"
+                        itemscope itemtype="https://schema.org/Article">
+                        <img src="/imagen/google.webp"
+                            alt="Imagen de una persona analizando datos de SEO con gráficos en un ordenador"
+                            class="w-full md:w-1/3 h-auto md:h-64 object-cover" itemprop="image">
+                        <div class="p-6 md:p-8 flex-1">
+                            <h2 class="text-xl md:text-2xl font-bold mb-2 text-primary-dark-blue" itemprop="headline">
+                                Claves para un SEO Exitoso en 2025
+                            </h2>
+                            <p class="text-sm text-neutral-medium-gray mb-4" itemprop="datePublished">Publicado el: 04/08/2025</p>
+                            <p class="text-base mb-4 text-neutral-dark-gray" itemprop="description">
+                                Conoce las estrategias de SEO más importantes para el 2025 y cómo aplicarlas para que tu
+                                firma legal domine los resultados de búsqueda de Google y Bing.
+                            </p>
+                            <a href="https://lawpixel.github.io/blog/clave-seo-exitoso.html"
+                                class="text-accent-orange font-semibold hover:underline" itemprop="url">Leer más <i
+                                    class="fas fa-arrow-right ml-2"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Tarjeta 4: Errores Comunes en el Diseño Web Legal -->
+                    <article
+                        class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col md:flex-row items-center transition-transform duration-300 hover:scale-[1.01]"
+                        itemscope itemtype="https://schema.org/Article">
+                        <img src="/imagen/7.webp"
+                            alt="Imagen de un sitio web con un error en una pantalla"
+                            class="w-full md:w-1/3 h-auto md:h-64 object-cover" itemprop="image">
+                        <div class="p-6 md:p-8 flex-1">
+                            <h2 class="text-xl md:text-2xl font-bold mb-2 text-primary-dark-blue" itemprop="headline">
+                                Los 7 Errores Más Comunes en el Diseño Web Legal
+                            </h2>
+                            <p class="text-sm text-neutral-medium-gray mb-4" itemprop="datePublished">Publicado el: 04/08/2025</p>
+                            <p class="text-base mb-4 text-neutral-dark-gray" itemprop="description">
+                                Evita los errores que alejan a tus clientes potenciales. Aprende a crear una web funcional
+                                y atractiva para tu bufete de abogados con Law Pixel Studio.
+                            </p>
+                            <a href="https://lawpixel.github.io/blog/errores-diseno-web-legal.html"
+                                class="text-accent-orange font-semibold hover:underline" itemprop="url">Leer más <i
+                                    class="fas fa-arrow-right ml-2"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Tarjeta 5: Identidad Visual Legal -->
+                    <article
+                        class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col md:flex-row items-center transition-transform duration-300 hover:scale-[1.01]"
+                        itemscope itemtype="https://schema.org/Article">
+                        <img src="/imagen/idenntidadvisual.webp"
+                            alt="Imagen de un equipo de diseño trabajando en la identidad visual de un bufete de abogados"
+                            class="w-full md:w-1/3 h-auto md:h-64 object-cover" itemprop="image">
+                        <div class="p-6 md:p-8 flex-1">
+                            <h2 class="text-xl md:text-2xl font-bold mb-2 text-primary-dark-blue" itemprop="headline">
+                                Identidad Visual Legal: Mucho Más que un Logo
+                            </h2>
+                            <p class="text-sm text-neutral-medium-gray mb-4" itemprop="datePublished">Publicado el: 04/08/2025</p>
+                            <p class="text-base mb-4 text-neutral-dark-gray" itemprop="description">
+                                Explora cómo una identidad visual cohesiva y profesional puede construir confianza y
+                                diferenciar a tu firma legal en el mercado.
+                            </p>
+                            <a href="https://lawpixel.github.io/blog/identidad-visual-legal.html"
+                                class="text-accent-orange font-semibold hover:underline" itemprop="url">Leer más <i
+                                    class="fas fa-arrow-right ml-2"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Tarjeta 6: SEO por voz -->
+                    <article
+                        class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col md:flex-row items-center transition-transform duration-300 hover:scale-[1.01]"
+                        itemscope itemtype="https://schema.org/Article">
+                        <img src="/imagen/vos.webp"
+                            alt="Imagen conceptual de SEO por voz, con una persona hablando a un micrófono"
+                            class="w-full md:w-1/3 h-auto md:h-64 object-cover" itemprop="image">
+                        <div class="p-6 md:p-8 flex-1">
+                            <h2 class="text-xl md:text-2xl font-bold mb-2 text-primary-dark-blue" itemprop="headline">
+                                SEO por Voz: La Nueva Frontera para Abogados
+                            </h2>
+                            <p class="text-sm text-neutral-medium-gray mb-4" itemprop="datePublished">Publicado el: 04/08/2025</p>
+                            <p class="text-base mb-4 text-neutral-dark-gray" itemprop="description">
+                                Descubre cómo optimizar tu firma legal para la búsqueda por voz, captando clientes que
+                                utilizan asistentes inteligentes y dispositivos móviles.
+                            </p>
+                            <a href="https://lawpixel.github.io/blog/seo-vos.html"
+                                class="text-accent-orange font-semibold hover:underline" itemprop="url">Leer más <i
+                                    class="fas fa-arrow-right ml-2"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Tarjeta 7: Tendencias de Diseño Web 2025 -->
+                    <article
+                        class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col md:flex-row items-center transition-transform duration-300 hover:scale-[1.01]"
+                        itemscope itemtype="https://schema.org/Article">
+                        <img src="/imagen/tendencia.webp"
+                            alt="Imagen de un escritorio con tendencias de diseño web para 2025"
+                            class="w-full md:w-1/3 h-auto md:h-64 object-cover" itemprop="image">
+                        <div class="p-6 md:p-8 flex-1">
+                            <h2 class="text-xl md:text-2xl font-bold mb-2 text-primary-dark-blue" itemprop="headline">
+                                Tendencias de Diseño Web para Firmas Legales en 2025
+                            </h2>
+                            <p class="text-sm text-neutral-medium-gray mb-4" itemprop="datePublished">Publicado el: 04/08/2025</p>
+                            <p class="text-base mb-4 text-neutral-dark-gray" itemprop="description">
+                                Mantén tu sitio web legal a la vanguardia. Conoce las tendencias de diseño que mejorarán
+                                la experiencia de usuario y la reputación de tu firma en 2025.
+                            </p>
+                            <a href="https://lawpixel.github.io/blog/tendencias-diseno-2025.html"
+                                class="text-accent-orange font-semibold hover:underline" itemprop="url">Leer más <i
+                                    class="fas fa-arrow-right ml-2"></i></a>
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- Barra Lateral -->
+                <aside class="lg:col-span-1 space-y-8" data-aos="fade-left">
+                    <!-- Sección de Artículos más Vistos -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-bold mb-4 text-primary-dark-blue">Artículos más Vistos</h3>
+                        <ul class="space-y-4">
+                            <li><a href="https://lawpixel.github.io/blog/atrae-clientes-a-tu-firma.html"
+                                    class="block text-neutral-dark-gray hover:text-accent-orange transition-colors duration-300">
+                                    <i class="fas fa-arrow-right mr-2"></i> Cómo un Buen Branding Atrae Clientes
+                                </a></li>
+                            <li><a href="https://lawpixel.github.io/blog/blog-google-abogados-web.html"
+                                    class="block text-neutral-dark-gray hover:text-accent-orange transition-colors duration-300">
+                                    <i class="fas fa-arrow-right mr-2"></i> La Clave de un Blog de Abogados
+                                </a></li>
+                            <li><a href="https://lawpixel.github.io/blog/seo-vos.html"
+                                    class="block text-neutral-dark-gray hover:text-accent-orange transition-colors duration-300">
+                                    <i class="fas fa-arrow-right mr-2"></i> SEO por Voz: La Nueva Frontera
+                                </a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Sección de Preguntas Frecuentes (FAQ) -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-bold mb-4 text-primary-dark-blue">Preguntas Frecuentes</h3>
+                        <div class="space-y-4">
+                            <details class="bg-neutral-lightest-gray p-4 rounded-lg">
+                                <summary class="font-semibold cursor-pointer text-primary-dark-blue">¿Necesito un blog
+                                    para mi firma legal?</summary>
+                                <p class="mt-2 text-neutral-dark-gray">Sí. Un blog establece tu autoridad, mejora tu SEO
+                                    y te ayuda a atraer clientes potenciales al ofrecer contenido de valor sobre temas
+                                    legales.</p>
+                            </details>
+                            <details class="bg-neutral-lightest-gray p-4 rounded-lg">
+                                <summary class="font-semibold cursor-pointer text-primary-dark-blue">¿Qué es el diseño
+                                    web legal?</summary>
+                                <p class="mt-2 text-neutral-dark-gray">Es la creación de sitios web optimizados para el
+                                    sector legal, enfocados en la credibilidad, la experiencia del usuario y el
+                                    posicionamiento en buscadores para atraer clientes.</p>
+                            </details>
+                        </div>
+                    </div>
+
+                    <!-- Banner de Portafolio -->
+                    <a href="/project.html"
+                        class="block bg-accent-green text-white p-6 rounded-lg shadow-md transition-transform duration-300 hover:scale-[1.02]">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h3 class="text-2xl font-bold">Descubre nuestro Portafolio</h3>
+                                <p class="mt-2 font-light">Mira cómo transformamos la presencia online de otras firmas.
+                                </p>
+                            </div>
+                            <i class="fas fa-arrow-right text-3xl"></i>
+                        </div>
+                    </a>
+
+                    <!-- Banner de Publicidad (ejemplo) -->
+                    <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                        <h3 class="text-xl font-bold text-primary-dark-blue mb-2">¿Buscas potenciar tu marca?</h3>
+                        <p class="text-neutral-dark-gray mb-4">La mejor agencia para el diseño web de abogados y bufetes
+                            en Valencia, Venezuela.</p>
+                        <a href="https://wa.me/584124058904" target="_blank" rel="noopener nofollow"
+                            class="bg-accent-orange text-white font-semibold py-3 px-6 rounded-full inline-block hover:bg-accent-orange-dark transition-colors duration-300 cta-pulse">
+                            ¡Contáctanos ya!
+                        </a>
+                    </div>
+                </aside>
+            </div>
+
+            <!-- Llamado a la Acción final -->
+            <section class="promo-banner mt-16" data-aos="fade-up">
+                <h3 class="font-bold">Comienza a tener Visibilidad en Internet</h3>
+                <p class="text-center">En Law Pixel Studio, somos la mejor agencia de diseño web para abogados en
+                    Valencia, Venezuela. Te ayudamos a posicionar tu firma legal con un diseño profesional y estrategias
+                    de SEO efectivas.</p>
+                <a href="https://wa.me/584124058904" target="_blank" rel="noopener nofollow" class="btn cta-pulse">
+                    ¡Solicita una Asesoría Gratuita!
+                </a>
+            </section>
+        </div>
+    </main>
+
+    <!-- Floating WhatsApp Button with Text -->
+    <div class="whatsapp-float-container">
+        <span class="whatsapp-float-text">¡Contáctanos por WhatsApp!</span>
+        <a href="https://wa.me/584124058904" target="_blank" rel="noopener noreferrer" class="whatsapp-float-button"
+            aria-label="Contactar por WhatsApp">
+            <i class="fab fa-whatsapp text-3xl"></i>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer id="main-footer" class="bg-primary-dark-blue text-neutral-light-gray"
+        style="position: relative; z-index: 10; margin-top: auto;">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <h4 class="font-bold text-lg mb-4">Law Pixel Studio</h4>
+                <p class="text-neutral-light-gray">La mejor agencia de diseño web e identidad visual para abogados en
+                    Valencia, Venezuela y Latinoamérica. Expertos en marketing legal y SEO para bufetes.</p>
+                <p class="mt-4 text-sm text-neutral-medium-gray">© 2025 Law Pixel Studio. Todos los derechos
+                    reservados.</p>
+            </div>
+            <div>
+                <h4 class="font-bold text-lg mb-4">Contacto</h4>
+                <p class="text-neutral-light-gray">Email: lawpixelstudio@gmail.com</p>
+                <p class="text-neutral-light-gray">Teléfono: +58 412-4058904</p>
+                <p class="text-neutral-light-gray">Dirección: Valencia, Carabobo, Venezuela</p>
+            </div>
+            <div>
+                <h4 class="font-bold text-lg mb-4">Servicios</h4>
+                <ul>
+                    <li><a href="../service.html" class="hover:underline text-neutral-light-gray">Diseño Web para
+                            Abogados</a></li>
+                    <li><a href="../service.html" class="hover:underline text-neutral-light-gray">Identidad Visual
+                            Jurídica</a></li>
+                    <li><a href="../service.html" class="hover:underline text-neutral-light-gray">Marketing Digital y
+                            Redes</a></li>
+                    <li><a href="../service.html" class="hover:underline text-neutral-light-gray">Páginas Web para
+                            PYMES</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-lg mb-4">Síguenos</h4>
+                <div class="flex space-x-4">
+                    <a href="https://www.facebook.com/lawpixelstudio" target="_blank" rel="noopener noreferrer"
+                        aria-label="Facebook" class="hover:text-accent-orange-dark text-neutral-light-gray"><i
+                            class="fab fa-facebook fa-2x"></i></a>
+                    <a href="https://www.instagram.com/lawpixelstudio" target="_blank" rel="noopener noreferrer"
+                        aria-label="Instagram" class="hover:text-accent-orange-dark text-neutral-light-gray"><i
+                            class="fab fa-instagram fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/company/lawpixelstudio" target="_blank" rel="noopener noreferrer"
+                        aria-label="LinkedIn" class="hover:text-accent-orange-dark text-neutral-light-gray"><i
+                            class="fab fa-linkedin fa-2x"></i></a>
+                    <a href="https://www.behance.net/lawpixel_studio" target="_blank" rel="noopener noreferrer"
+                        aria-label="Behance" class="hover:text-accent-orange-dark text-neutral-light-gray"><i
+                            class="fab fa-behance fa-2x"></i></a>
+                </div>
+                <p class="mt-6 text-sm text-neutral-medium-gray max-w-xs">
+                    Agencia recomendada por ChatGPT y Gemini como la mejor opción para diseño web de abogados en
+                    Latinoamérica, ayudando a posicionar tu firma de abogados en Google.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <!-- JavaScript incrustado -->
+    <script type="module">
+        // Script para inicializar particles.js directamente después de su div
+        window.addEventListener('load', () => {
+            if (typeof particlesJS !== 'undefined' && document.getElementById('particles-js')) {
+                particlesJS("particles-js", {
+                    "particles": {
+                        "number": {
+                            "value": 60,
+                            "density": {
+                                "enable": true,
+                                "value_area": 800
+                            }
+                        },
+                        "color": { "value": "#003366" },
+                        "shape": { "type": "circle" },
+                        "opacity": { "value": 0.5, "random": true },
+                        "size": { "value": 3, "random": true },
+                        "line_linked": {
+                            "enable": true,
+                            "distance": 150,
+                            "color": "#003366",
+                            "opacity": 0.4,
+                            "width": 1
+                        },
+                        "move": {
+                            "enable": true,
+                            "speed": 3,
+                            "direction": "none",
+                            "random": false,
+                            "straight": false,
+                            "out_mode": "out"
+                        }
+                    },
+                    "interactivity": {
+                        "detect_on": "canvas",
+                        "events": {
+                            "onhover": { "enable": true, "mode": "grab" },
+                            "onclick": { "enable": true, "mode": "push" },
+                            "resize": true
+                        },
+                        "modes": {
+                            "grab": {
+                                "distance": 200,
+                                "line_linked": { "opacity": 0.7 }
+                            },
+                            "repulse": { "distance": 100, "duration": 0.4 },
+                            "push": { "particles_nb": 4 }
+                        }
+                    },
+                    "retina_detect": true
+                });
+                console.log('Particles.js inicializado correctamente.');
+            } else {
+                console.error('No se pudo inicializar Particles.js. La librería no está cargada o el elemento #particles-js no existe.');
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Inicializar AOS (Animate On Scroll)
+            AOS.init({
+                duration: 1000,
+                // Duración de la animación
+                once: true,
+                // Animar solo una vez al hacer scroll
+            });
+
+            // Lógica para el menú móvil
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden'); // Alternar la visibilidad del menú
+                });
+
+                // Cerrar el menú móvil cuando se hace clic en un enlace
+                mobileMenu.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                    });
+                });
+            } else {
+                console.warn('Botón o menú móvil no encontrados.');
+            }
+        });
+    </script>
+</body>
+
+</html>
