@@ -1,6 +1,7 @@
 User-agent: *
-Allow: /
-Sitemap: https://lawpixel.github.io/sitemap.xml
+Disallow: /privacidad
 
 User-agent: Googlebot
-Allow: /
+Disallow: /privacidad
+
+Sitemap: https://lawpixel.github.io/sitemap.xml
