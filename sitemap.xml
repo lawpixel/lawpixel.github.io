@@ -10,6 +10,12 @@
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
+  <url>
+        <loc>https://lawpixel.github.io/promocion.html</loc>
+        <lastmod>2025-08-31</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
 
     <!-- Páginas principales del sitio - Alta prioridad -->
     <url>
@@ -137,3 +143,4 @@
     </url>
 
 </urlset>
+
