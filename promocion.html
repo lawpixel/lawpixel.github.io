@@ -21,14 +21,14 @@
     <meta property="og:url" content="https://lawpixel.github.io/promocion">
     <meta property="og:title" content="Law Pixel Studio | Impulsa Tu Despacho Legal Online con Nuestro Plan Profesional">
     <meta property="og:description" content="Multiplica tus clientes y dispara tu visibilidad online. Diseño web, SEO local y branding jurídico para abogados por solo $450. ¡Oferta exclusiva por tiempo limitado!">
-    <meta property="og:image" content="ttps://lawpixel.github.io/imagen/promo.webp"> <!-- (min 1200x630px) -->
+    <meta property="og:image" content="/imagen/promo.webp"> <!-- (min 1200x630px) -->
 
     <!-- Twitter Card (para Twitter/X) -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://lawpixel.github.io/promocion">
     <meta name="twitter:title" content="Law Pixel Studio | Impulsa Tu Despacho Legal Online con Nuestro Plan Profesional">
     <meta name="twitter:description" content="Multiplica tus clientes y dispara tu visibilidad online. Diseño web, SEO local y branding jurídico para abogados por solo $450. ¡Oferta exclusiva por tiempo limitado!">
-    <meta name="twitter:image" content="https://lawpixel.github.io/imagen/promo.webp"> <!-- Reemplazar con URL de imagen real (min 1200x675px) -->
+    <meta name="twitter:image" content="/imagen/promo.webp"> <!-- Reemplazar con URL de imagen real (min 1200x675px) -->
     <meta name="twitter:site" content="@lawpixelstudio">
     <meta name="twitter:creator" content="@lawpixelstudio">
 
@@ -92,7 +92,7 @@
             font-family: 'Inter', sans-serif;
             overflow-x: hidden; /* Evita el scroll horizontal */
         }
-        /* Pseudo-elemento para el fondo sutil del hero, difícil de replicar con Tailwind directamente */
+      
         .hero::before {
             content: '';
             position: absolute;
@@ -148,7 +148,7 @@
           "@type": "Organization",
           "name": "Law Pixel Studio",
           "url": "https://lawpixel.github.io/promocion",
-          "logo": "https://lawpixel.github.io/imagen/promo.webp",
+          "logo": "/imagen/promo.webp",
           "contactPoint": {
             "@type": "ContactPoint",
             "telephone": "+584124058904",
@@ -165,7 +165,7 @@
           "@type": "ProfessionalService",
           "name": "Law Pixel Studio",
           "url": "https://lawpixel.github.io/promocion",
-          "image": "https://lawpixel.github.io/imagen/promo.webp", 
+          "image": "/imagen/promo.webp", 
           "priceRange": "$450",
           "description": "Agencia de diseño web, SEO local y branding jurídico para abogados. Impulsamos tu despacho legal online.",
           "serviceType": ["Diseño Web", "SEO para Abogados", "Branding Jurídico", "Marketing Digital Legal"],
@@ -208,7 +208,7 @@
           "name": "Plan de Visualización Profesional para Abogados",
           "description": "El plan integral de Law Pixel Studio para abogados: diseño web, SEO técnico y local, branding y hosting/dominio, todo para disparar tu presencia digital.",
           "sku": "LPS-PVPA-2025-08",
-          "image": "https://lawpixel.github.io/imagen/promo.webp",<!--  imagen del plan -->
+          "image": "/imagen/promo.webp",<!--  imagen del plan -->
           "offers": { 
             "@type": "Offer",
             "url": "https://lawpixel.github.io/promocion#plan",
@@ -739,15 +739,15 @@
         startSocialProofLoop();
 
         // 4. Exit Intent Pop-up
-        const exitIntentPopup = document.getElementById('exitIntentPopup');
-        const closePopupBtn = document.getElementById('closePopupBtn');
-        let exitIntentShown = false;
+      //  const exitIntentPopup = document.getElementById('exitIntentPopup');
+     //   const closePopupBtn = document.getElementById('closePopupBtn');
+      //  let exitIntentShown = false;
 
-        document.addEventListener('mouseleave', (e) => {
-            if (e.clientY < 50 && !exitIntentShown) { // Si el mouse sale por la parte superior
-                exitIntentPopup.classList.remove('hidden'); // make it visible
-                exitIntentPopup.classList.add('flex'); // use flex for positioning
-                exitIntentPopup.classList.add('opacity-100'); // make it opaque
+      //  document.addEventListener('mouseleave', (e) => {
+          //  if (e.clientY < 50 && !exitIntentShown) { // Si el mouse sale por la parte superior
+          //      exitIntentPopup.classList.remove('hidden'); // make it visible
+           //     exitIntentPopup.classList.add('flex'); // use flex for positioning
+            //    exitIntentPopup.classList.add('opacity-100'); // make it opaque
                 // Toggle scale classes on the direct child div
                 const popupContent = exitIntentPopup.querySelector('div:not([id])');
                 if (popupContent) {
