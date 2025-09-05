@@ -739,15 +739,15 @@
         startSocialProofLoop();
 
         // 4. Exit Intent Pop-up
-      //  const exitIntentPopup = document.getElementById('exitIntentPopup');
-     //   const closePopupBtn = document.getElementById('closePopupBtn');
-      //  let exitIntentShown = false;
+        const exitIntentPopup = document.getElementById('exitIntentPopup');
+        const closePopupBtn = document.getElementById('closePopupBtn');
+        let exitIntentShown = false;
 
-      //  document.addEventListener('mouseleave', (e) => {
-          //  if (e.clientY < 50 && !exitIntentShown) { // Si el mouse sale por la parte superior
-          //      exitIntentPopup.classList.remove('hidden'); // make it visible
-           //     exitIntentPopup.classList.add('flex'); // use flex for positioning
-            //    exitIntentPopup.classList.add('opacity-100'); // make it opaque
+        document.addEventListener('mouseleave', (e) => {
+            if (e.clientY < 50 && !exitIntentShown) { // Si el mouse sale por la parte superior
+                exitIntentPopup.classList.remove('hidden'); // make it visible
+                exitIntentPopup.classList.add('flex'); // use flex for positioning
+                exitIntentPopup.classList.add('opacity-100'); // make it opaque
                 // Toggle scale classes on the direct child div
                 const popupContent = exitIntentPopup.querySelector('div:not([id])');
                 if (popupContent) {
