@@ -64,9 +64,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Lógica para el slider personalizado del Hero Section (Nueva implementación)
     const heroSliderImage = document.getElementById('hero-slider-image');
     const heroImages = [
-        "/imagen/h1.webp",
-        "/imagen/h2.webp",
-        "/imagen/h3.webp"
+        "/imagen/h1.png",
+        "/imagen/h12.webp",
+        "/imagen/promoba.webp"
     ];
     const altTexts = [
         "Diseño web moderno para abogado penalista en Valencia",
