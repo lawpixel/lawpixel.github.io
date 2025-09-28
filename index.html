@@ -474,6 +474,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   }
 }
 </script>
+ <!-- estructura de tus planes de precios -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "OfferCatalog",
+      "name": "Planes de Diseño Web para Abogados - Law Pixel Studio",
+      "description": "Catálogo de precios y servicios de diseño web, SEO y autoridad digital para bufetes de abogados.",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "name": "Presencia Digital Exprés",
+          "description": "Ideal para comenzar, validar tu marca legal y captar leads rápidamente.",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": 200,
+            "priceCurrency": "USD",
+            "unitText": "ONE TIME PAYMENT"
+          },
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Diseño Web Básico para Bufetes de Abogados"
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Estrategia Legal Pro",
+          "description": "Presencia robusta, ideal para bufetes que buscan expansión y captación activa de casos.",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": 600,
+            "priceCurrency": "USD",
+            "unitText": "ONE TIME PAYMENT"
+          },
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Desarrollo Web Profesional con SEO Local"
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Autoridad & Posicionamiento SEO",
+          "description": "La solución definitiva para convertirte en el referente legal de tu industria.",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": 1000,
+            "priceCurrency": "USD",
+            "unitText": "ONE TIME PAYMENT"
+          },
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Estrategia de Autoridad Web y SEO de Alto Impacto"
+          }
+        }
+      ]
+    }
+    </script>
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -493,7 +549,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
        <!-- Banner Promocion -->
   <div class="fixed top-0 left-0 w-full z-50 bg-blue-600 text-white px-6 py-4 shadow-lg flex flex-col sm:flex-row items-center justify-between gap-4">
   <p class="text-sm sm:text-base font-semibold">
-    🔥 Ahorra el 35% ¡Oferta exclusiva! Plan de Visualización Profesional por <span class="underline">$450</span> por tiempo limitado. ✨
+    🔥 Ahorra el 35% ¡Oferta exclusiva! Plan de Estrategia Legal Pro por <span class="underline">$450</span> por tiempo limitado. ✨
   </p>
   <a href="https://lawpixel.github.io/promocion.html"
      class="bg-white text-blue-600 hover:text-white hover:bg-green-600 font-bold py-2 px-4 rounded transition duration-300 ease-in-out text-sm sm:text-base">
@@ -539,6 +595,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="space-x-6 hidden md:flex">
                 <a href="/index.html" class="hover:text-primary-dark-blue-light font-semibold transition-colors duration-300" itemprop="name">Home</a>
                 <a href="/service.html" class="hover:text-primary-dark-blue-light font-semibold transition-colors duration-300" itemprop="name">Servicios</a>
+                <a href="#planes" class="hover:text-primary-dark-blue-light font-semibold transition-colors duration-300" itemprop="name">Planes</a>
               <a href="/promocion.html" class="hover:text-primary-dark-blue-light font-semibold transition-colors duration-300" itemprop="name">Promoción</a>
                 <a href="/project.html" class="hover:text-primary-dark-blue-light font-semibold transition-colors duration-300" itemprop="name">Portafolio</a>
                 <a href="/about.html" class="hover:text-primary-dark-blue-light font-semibold transition-colors duration-300" itemprop="name">Nosotros</a>
@@ -553,6 +610,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div id="mobile-menu" class="hidden md:hidden bg-neutral-lightest-gray py-4 px-6 shadow-lg">
             <a href="/index.html" class="block py-2 text-neutral-dark-gray hover:text-primary-dark-blue-light font-semibold" itemprop="name">Home</a>
             <a href="/service.html" class="hover:text-primary-dark-blue-light font-semibold transition-colors duration-300" itemprop="name">Servicios</a>
+              <a href="#planes" class="hover:text-primary-dark-blue-light font-semibold transition-colors duration-300" itemprop="name">Planes</a>
             <a href="/promocion.html" class="hover:text-primary-dark-blue-light font-semibold transition-colors duration-300" itemprop="name">Promoción</a>
             <a href="/project.html" class="block py-2 text-neutral-dark-gray hover:text-primary-dark-blue-light font-semibold" itemprop="name">Portafolio</a>
             <a href="/about.html" class="block py-2 text-neutral-dark-gray hover:text-primary-dark-blue-light font-semibold" itemprop="name">Nosotros</a>
@@ -567,7 +625,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- Fondo interactivo -->
     <div id="particles-js" aria-hidden="true"></div>
 
-    <!-- Hero Section con Rich Snippets -->
+    
     <main id="main-content">
         <section class="hero-section relative grid grid-cols-1 md:grid-cols-2 gap-8 items-center max-w-7xl mx-auto px-6 py-20" itemscope itemtype="https://schema.org/WPHeader">
             <div data-aos="fade-right" data-aos-duration="1000" itemprop="mainEntity" itemscope itemtype="https://schema.org/WebPageElement">
@@ -595,7 +653,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <!-- Nuevo Slider del Hero -->
             <div id="hero-custom-slider" class="relative rounded-lg h-[400px] md:h-[500px] overflow-hidden" data-aos="fade-left" data-aos-duration="1000" itemscope itemtype="https://schema.org/ImageGallery">
   <div itemscope itemtype="https://schema.org/ImageObject">
-    <img id="hero-slider-image" src="/imagen/h1.webp" alt="Diseño web moderno para abogado penalista en Valencia" class="w-full h-full object-contain rounded-lg hero-slider-image" itemprop="contentUrl">
+    <img id="hero-slider-image" src="/imagen/liti1.webp" alt="Diseño web moderno para abogado penalista en Valencia" class="w-full h-full object-contain rounded-lg hero-slider-image" itemprop="contentUrl">
   </div>
 </div>
 
@@ -920,6 +978,290 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
             </div>
         </section>
+
+<!-- NOTA: Este es un bloque de Precios  -->
+
+<section class="bg-gray-50 font-sans py-16 px-4 md:px-8 relative z-10">
+    
+    <!-- Carga de Tailwind CSS y Configuración de Colores Personalizados -->
+   
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-blue': '#007bff', // Azul corporativo
+                        'dark-bg': '#1a1a1a',     // Fondo oscuro (Negro/Gris Oscuro)
+                        'law-gold': '#ffb700',    // Dorado para destacar
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <!-- TÍTULO PRINCIPAL DE LA SECCIÓN (Optimizado para SEO y Atractivo) -->
+    <div class="max-w-6xl mx-auto mb-12 text-center" id="planes">
+        
+        <h1 class="text-4xl font-extrabold text-gray-900 sm:text-5xl">
+            Planes Web de Éxito: <strong>Atrae Clientes</strong> y Construye tu <strong>Autoridad Legal</strong>
+        </h1>
+        
+        <p class="mt-4 text-xl text-gray-600">
+            Diseño estratégico, optimización <strong>SEO</strong> avanzada y contenido que te posiciona como el <strong>experto</strong> en tu área.
+        </p>
+    </div>
+    
+    <!-- Contenedor Principal de los Planes -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+        <!-- PLAN 1: PRESENCIA DIGITAL EXPRÉS -->
+        <div class="bg-white rounded-xl overflow-hidden border border-gray-200 shadow-lg transition duration-300 relative hover:shadow-2xl hover:-translate-y-1">
+            <!-- Encabezado de la Tarjeta (Azul) -->
+            <div class="bg-primary-blue p-5 text-white text-center rounded-t-xl">
+             
+                <h2 class="text-xl text-white font-bold uppercase tracking-wider">
+                    Presencia Digital Exprés
+                </h2>
+        
+                <p class="text-xs mt-1 opacity-90">
+                    Ideal para comenzar, validar tu marca legal y <strong>captar leads</strong> rápidamente.
+                </p>
+            </div>
+            
+       
+            <div class="p-6">
+                <div class="text-center mb-5">
+                    <p class="text-base text-gray-600 font-medium mb-1">Pago Único</p>
+                    
+                    <p class="text-3xl md:text-4xl font-extrabold text-primary-blue">
+                        200$
+                    </p>
+                </div>
+
+               
+                <ul class="space-y-4 mb-6">
+                    <li class="flex items-start text-xs text-gray-700">
+                        <svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span class="font-semibold">Diseño de 1 Sola Página Enfocada en Conversión:</span> Mensaje claro para acción inmediata.
+                    </li>
+                    <li class="flex items-start text-xs text-gray-700">
+                        <svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span class="font-semibold">Optimización Móvil:</span> Visualización perfecta en cualquier dispositivo (adaptado a todos los dispositivos).
+                    </li>
+                    <li class="flex items-start text-xs text-gray-700">
+                        <svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span class="font-semibold">Panel Autoadministrable:</span> Control total para actualizar textos e imágenes fácilmente.
+                    </li>
+                    <li class="flex items-start text-xs text-gray-700">
+                        <svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span class="font-semibold">SEO Esencial para Búsqueda Local:</span> Configuración inicial para ser indexado por Google.
+                    </li>
+                    <li class="flex items-start text-xs text-gray-700">
+                        <svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span class="font-semibold">Localización con Mapas:</span> Integración con Google Maps para ubicar tu oficina.
+                    </li>
+                    <li class="flex items-start text-xs text-gray-700">
+                        <svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span class="font-semibold">Conexión a Redes Sociales:</span> Enlaces directos a tus perfiles profesionales.
+                    </li>
+                    <li class="flex items-start text-xs text-gray-700">
+                        <svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span class="font-semibold">Botón de Contacto Rápido:</span> Botón directo a WhatsApp.
+                    </li>
+                    <li class="flex items-start text-xs text-gray-700">
+                        <svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span class="font-semibold">Soporte Técnico 24/7:</span> Asistencia técnica para garantizar el funcionamiento de tu web.
+                    </li>
+                    <li class="flex items-start text-xs text-gray-700">
+                        <svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span class="font-semibold">Alojamiento (Hosting) y Dominio:</span> Incluidos por el primer año.
+                    </li>
+                </ul>
+<!-- ENLACE DE WHATSAPP CON ESTILO DE BOTÓN (no-underline añadido) -->
+                <a href="https://wa.me/584124058904" target="_blank" class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg text-sm transition duration-300 shadow-md block text-center no-underline">
+                    Contratar Plan
+                </a>
+            </div>
+        </div>
+
+        <!-- PLAN 2: ESTRATEGIA LEGAL PRO (Recomendado) -->
+        <div class="bg-white rounded-xl overflow-hidden border border-primary-blue relative shadow-2xl transition duration-500 hover:shadow-3xl hover:-translate-y-1 hover:scale-[1.03]">
+            <!-- Etiqueta de Recomendado -->
+            <span class="absolute top-0 right-0 bg-law-gold text-gray-900 text-xs font-bold px-3 py-1 rounded-bl-lg uppercase tracking-wider shadow-md">
+                Recomendado
+            </span>
+          
+            <div class="bg-dark-bg p-5 text-white text-center rounded-t-xl">
+          
+                <h2 class="text-xl text-white font-bold uppercase tracking-wider">
+                    Estrategia Legal Pro
+                </h2>
+     
+                <p class="text-xs mt-1 opacity-90">
+                    Presencia robusta, ideal para Abogados y bufetes  que buscan expansión y <strong>captación activa de casos</strong>.
+                </p>
+            </div>
+
+            <!-- Contenido de la Tarjeta -->
+            <div class="p-6">
+                <div class="text-center mb-5">
+                    <p class="text-base text-gray-600 font-medium mb-1">Pago Único</p>
+                    
+                    <p class="text-3xl md:text-4xl font-extrabold text-gray-900">
+                        600$
+                    </p>
+                </div>
+
+             
+                <ul class="space-y-4 mb-6">
+                    <li class="flex items-start text-xs text-gray-700">
+                        <svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span class="font-semibold">Sitio de 4 Páginas Clave:</span> Estructura completa (Servicios, Equipo, Contacto) para generar confianza.
+                    </li>
+                    <li class="flex items-start text-xs text-gray-700">
+                        <svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span class="font-semibold">Máxima Adaptabilidad:</span> Diseño responsivo garantizado en todos los dispositivos.
+                    </li>
+                    <li class="flex items-start text-xs text-gray-700">
+                        <svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span class="font-semibold">Optimización Google My Business:</span> Perfil de negocio optimizado para búsquedas locales de alta intención.
+                    </li>
+                    <li class="flex items-start text-xs text-gray-700">
+                        <svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span class="font-semibold">Asistencia en Contenido con IA:</span> Recomendación y generación inicial de textos con Inteligencia Artificial (chat gpt, Geminis).
+                    </li>
+                    <li class="flex items-start text-xs text-gray-700">
+                        <svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span class="font-semibold">SEO Avanzado para Liderazgo Local:</span> Implementación de mejores prácticas para mejor posicionamiento orgánico.
+                    </li>
+                    <li class="flex items-start text-xs text-gray-700">
+                        <svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span class="font-semibold">Panel Autoadministrable Completo:</span> Facilidad para gestionar todas las secciones del sitio.
+                    </li>
+                    <li class="flex items-start text-xs text-gray-700">
+                        <svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span class="font-semibold">Localización con Mapas:</span> Integración con Google Maps para ubicar tu oficina.
+                    </li>
+                    <li class="flex items-start text-xs text-gray-700">
+                        <svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span class="font-semibold">Conexión a Redes Sociales:</span> Enlaces directos a tus perfiles profesionales.
+                    </li>
+                    <li class="flex items-start text-xs text-gray-700">
+                        <svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span class="font-semibold">Botón de Contacto Rápido:</span> Botón directo a WhatsApp.
+                    </li>
+                    <li class="flex items-start text-xs text-gray-700">
+                        <svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span class="font-semibold">Soporte Técnico 24/7:</span> Asistencia técnica para garantizar el funcionamiento de tu web.
+                    </li>
+                    <li class="flex items-start text-xs text-gray-700">
+                        <svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span class="font-semibold">Alojamiento (Hosting) y Dominio:</span> Incluidos por el primer año.
+                    </li>
+                </ul>
+
+              <!-- ENLACE DE WHATSAPP CON ESTILO DE BOTÓN (no-underline añadido) -->
+                <a href="https://wa.me/584124058904" target="_blank" class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg text-sm transition duration-300 shadow-md block text-center no-underline">
+                    Contratar Plan
+                </a>
+            </div>
+        </div>
+
+        <!-- PLAN 3: AUTORIDAD & POSICIONAMIENTO SEO -->
+        <div class="bg-white rounded-xl overflow-hidden border border-gray-200 shadow-lg transition duration-300 relative hover:shadow-2xl hover:-translate-y-1">
+            <!-- Encabezado de la Tarjeta (Dorado/Law Gold) -->
+            <div class="bg-law-gold p-5 text-gray-900 text-center rounded-t-xl">
+             
+                <h2 class="text-xl font-bold uppercase tracking-wider">
+                    Autoridad & Posicionamiento SEO
+                </h2>
+               
+                <p class="text-xs mt-1 opacity-90">
+                    La solución definitiva para convertirte en el <strong>referente legal</strong> de tu industria.
+                </p>
+            </div>
+
+            <!-- Contenido de la Tarjeta -->
+            <div class="p-6">
+                <div class="text-center mb-5">
+                    <p class="text-base text-gray-600 font-medium mb-1">Pago Único</p>
+                    
+                    <p class="text-3xl md:text-4xl font-extrabold text-law-gold">
+                        1000$
+                    </p>
+                </div>
+
+                
+                <ul class="space-y-4 mb-6">
+                    <li class="flex items-start text-xs text-gray-700">
+                        <svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span class="font-semibold">Web Completa de 10+ Páginas Avanzadas:</span> Cobertura total de tu práctica, equipo y casos de éxito.
+                    </li>
+                    <li class="flex items-start text-xs text-gray-700">
+                        <svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span class="font-semibold">Blog de Autoridad Integrado:</span> Plataforma para publicar artículos que dominan el ranking de Google.
+                    </li>
+                    <li class="flex items-start text-xs text-gray-700">
+                        <svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span class="font-semibold">Optimización Google My Business:</span> Perfil de negocio optimizado para búsquedas locales de alta intención.
+                    </li>
+                    <li class="flex items-start text-xs text-gray-700">
+                        <svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span class="font-semibold">Asistencia en Contenido con IA:</span> Recomendación y generación inicial de textos con Inteligencia Artificial (chat gpt, Geminis).
+                    </li>
+                    <li class="flex items-start text-xs text-gray-700">
+                        <svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span class="font-semibold">Estrategia SEO de Alto Impacto (5 Palabras Clave):</span> Diseño para la captación masiva de clientes y autoridad de marca.
+                    </li>
+                    <li class="flex items-start text-xs text-gray-700">
+                        <svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span class="font-semibold">Panel Autoadministrable Completo:</span> Facilidad para gestionar todas las secciones del sitio.
+                    </li>
+                    <li class="flex items-start text-xs text-gray-700">
+                        <svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span class="font-semibold">Localización con Mapas:</span> Integración con Google Maps para ubicar tu oficina.
+                    </li>
+                    <li class="flex items-start text-xs text-gray-700">
+                        <svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span class="font-semibold">Conexión a Redes Sociales:</span> Enlaces directos a tus perfiles profesionales.
+                    </li>
+                    <li class="flex items-start text-xs text-gray-700">
+                        <svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span class="font-semibold">Botón de Contacto Rápido:</span> Botón directo a WhatsApp.
+                    </li>
+                    <li class="flex items-start text-xs text-gray-700">
+                        <svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span class="font-semibold">Soporte Técnico 24/7:</span> Asistencia técnica para garantizar el funcionamiento de tu web.
+                    </li>
+                    <li class="flex items-start text-xs text-gray-700">
+                        <svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span class="font-semibold">Alojamiento (Hosting) y Dominio:</span> Incluidos por el primer año.
+                    </li>
+                </ul>
+                   
+<!-- ENLACE DE WHATSAPP CON ESTILO DE BOTÓN (no-underline añadido) -->
+                <a href="https://wa.me/584124058904" target="_blank" class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg text-sm transition duration-300 shadow-md block text-center no-underline">
+                    Contratar Plan
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- NOTA LEGAL  -->
+    <div class="max-w-6xl mx-auto mt-12 pt-6 border-t border-gray-200">
+        <p class="text-xs text-center text-gray-500">
+            <strong class="text-gray-700">Aclaración Importante:</strong> Los costos presentados cubren la implementación y el desarrollo inicial del sitio web (<strong class="text-gray-700">pago único</strong>). El servicio de <strong class="text-gray-700">gestión continua, mantenimiento técnico y actualizaciones de contenido también lo prestamos por un costo adicional</strong> (mensual o anual) y deben cotizarse por separado según el alcance.
+        </p>
+    </div>
+
+</section>
+
+
 
         <!-- Sección Blog con Slider -->
         <section id="blog" class="py-20 bg-white max-w-6xl mx-auto px-6" data-aos="fade-up">
