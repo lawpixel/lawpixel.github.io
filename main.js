@@ -65,8 +65,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const heroSliderImage = document.getElementById('hero-slider-image');
     const heroImages = [
         "/imagen/promoba.webp",
-        "/imagen/h12.webp",
-        "/imagen/promoba.webp"
+        "/imagen/liti2.webp",
+        "/imagen/liti1.webp"
     ];
     const altTexts = [
         "Diseño web moderno para abogado penalista en Valencia",
@@ -223,4 +223,50 @@ document.addEventListener('DOMContentLoaded', () => {
             icon.classList.add('rotate-180');
         }
     }
+});
+
+
+
+        
+      // Configuración EmailJS
+emailjs.init('QH9XAgF1pwOfujGKE')
+// Validación y envío mejorado
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const form = this;
+    const button = form.querySelector('button[type="submit"]');
+    const buttonText = button.querySelector('.button-text');
+    const spinner = button.querySelector('.spinner-border');
+    
+    // Validar formulario
+    if (!form.checkValidity()) {
+        form.classList.add('was-validated');
+        return;
+    }
+    
+    // Mostrar loading
+    button.disabled = true;
+    buttonText.textContent = 'Enviando...';
+    spinner.classList.remove('d-none');
+    
+    // Enviar email
+    emailjs.sendForm('service_esxhg3s', 'template_g31mccl', form)
+        .then(function() {
+            // Éxito
+            alert('¡Mensaje enviado! Nos pondremos en contacto pronto.');
+            form.reset();
+            form.classList.remove('was-validated');
+        })
+        .catch(function(error) {
+            // Error
+            console.error('Error:', error);
+            alert('Error al enviar. Por favor, inténtalo de nuevo o escríbenos por WhatsApp.');
+        })
+        .finally(function() {
+            // Restaurar botón
+            button.disabled = false;
+            buttonText.textContent = 'Solicitar Propuesta';
+            spinner.classList.add('d-none');
+        });
 });
