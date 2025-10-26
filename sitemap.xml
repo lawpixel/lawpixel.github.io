@@ -6,7 +6,7 @@
     <!-- Página principal - Prioridad máxima -->
     <url>
         <loc>https://lawpixel.github.io/</loc>
-        <lastmod>2025-10-25</lastmod>
+        <lastmod>2025-10-26</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -31,7 +31,7 @@
         <loc>https://lawpixel.github.io/valencia/blog.html</loc>
         <lastmod>2025-07-31</lastmod>
         <changefreq>daily</changefreq>
-        <priority>0.8</priority>
+        <priority>0.9</priority>
     </url>
 
     <!-- Páginas institucionales -->
@@ -116,7 +116,7 @@
 
     <url>
         <loc>https://lawpixel.github.io/blog/tendencias-diseno-2025.html</loc>
-        <lastmod>2025-10-17</lastmod>
+        <lastmod>2025-07-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -141,13 +141,13 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
-  <url>
-        <loc>https://lawpixel.github.io/blog/pagina-web-para-abogados.html</loc>
-        <lastmod>2025-10-17</lastmod>
+    
+    
+    <url>
+        <loc>https://lawpixel.github.io/blog/por-que-los-abogados-necesitan-una-web.html</loc>
+        <lastmod>2025-10-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
+
 </urlset>
-
-
-
